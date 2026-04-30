@@ -1,0 +1,640 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+:root{
+--accent:#3bd6ff;
+--accent-dark:#1fa8d1;
+--accent-glow:rgba(59,214,255,0.35);
+--accent-soft:rgba(59,214,255,0.15);
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#060b14;
+color:#fff;
+}
+
+/* NAVBAR */
+.navbar{
+background:#020814;
+display:flex;
+justify-content:space-between;
+padding:15px 40px;
+align-items:center;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+.logo span{
+color:var(--accent);
+}
+
+.navbar nav a{
+
+color:#fff;
+margin-left:15px;
+text-decoration:none;
+
+padding:10px 18px;
+
+border-radius:10px;
+
+background:rgba(255,255,255,0.04);
+
+border:1px solid rgba(59,214,255,0.35);
+
+box-shadow:
+0 0 8px rgba(59,214,255,0.15);
+
+transition:all .25s ease;
+
+}
+.navbar nav a:hover{
+
+background:rgba(59,214,255,0.12);
+
+border:1px solid #3bd6ff;
+
+color:#3bd6ff;
+
+transform:translateY(-3px);
+
+box-shadow:
+0 0 10px #3bd6ff,
+0 0 20px rgba(59,214,255,0.6);
+
+}
+
+/* HERO */
+.hero{
+height:70vh;
+background:
+linear-gradient(to right,rgba(6,11,20,0.95),rgba(6,11,20,0.3)),
+url("images/gallery/Juegos/Fondo Pantalla Gamer.png") center/cover no-repeat;
+display:flex;
+align-items:center;
+padding-left:60px;
+}
+
+.hero-text h1{
+font-family:'Press Start 2P',cursive;
+font-size:48px;
+color:var(--accent);
+animation:glowTitle 4s ease-in-out infinite;
+text-shadow:
+0 0 8px #3bd6ff,
+0 0 18px #3bd6ff,
+0 0 30px rgba(59,214,255,0.6);
+}
+
+
+
+/* ANIMACION LETRAS TITULO */
+
+.mario-title span{
+
+display:inline-block;
+font-family:inherit;
+
+animation:marioBounce 2.4s infinite;
+
+}
+
+.hero-text p{
+margin:15px 0;
+color:#ccc;
+}
+
+/* BOTONES */
+.btn{
+background:var(--accent);
+color:#001018;
+padding:12px 25px;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+margin-top:35px;
+display:inline-block;
+transition:.25s;
+}
+
+.btn:hover{
+background:var(--accent-dark);
+transform:translateY(-3px);
+box-shadow:0 10px 25px var(--accent-glow);
+}
+
+/* SECTIONS */
+.section{
+padding:50px;
+position:relative;
+overflow:hidden;
+}
+
+.section h2{
+margin-bottom:30px;
+}
+
+.dark{
+background:#020814;
+}
+
+.section::before{
+content:"";
+position:absolute;
+inset:0;
+background:radial-gradient(circle,var(--accent-soft),transparent 70%);
+pointer-events:none;
+z-index:0;
+}
+
+/* GRID JUEGOS */
+.games-grid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+gap:30px;
+}
+
+/* CARTA JUEGO */
+.game-card{
+
+background:#0c1220;
+border-radius:18px;
+overflow:hidden;
+position:relative;
+
+opacity:0;
+transform:translateY(30px);
+
+animation:
+cardFadeUp .6s ease-out forwards,
+floatCard 4s ease-in-out .6s infinite;
+
+transition:transform .25s ease, box-shadow .25s ease;
+
+}
+
+
+/* IMAGEN */
+.game-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+display:block;
+}
+
+/* BOTON DESCARGA */
+.game-card a{
+
+display:inline-block;
+margin-top:10px;
+padding:10px 22px;
+
+background:linear-gradient(45deg,#0b1f3a,#123b6b);
+color:#3bd6ff;
+
+border:1px solid rgba(59,214,255,0.6);
+border-radius:10px;
+
+text-decoration:none;
+font-weight:700;
+letter-spacing:.5px;
+
+position:relative;
+overflow:hidden;
+
+transition:all .3s ease;
+
+box-shadow:
+0 0 8px rgba(59,214,255,0.2);
+
+}
+
+/* EFECTO BRILLO QUE PASA */
+.game-card a::before{
+content:"";
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+
+background:linear-gradient(
+120deg,
+transparent,
+rgba(59,214,255,0.6),
+transparent
+);
+
+transition:.5s;
+}
+
+/* HOVER PRO */
+.game-card a:hover{
+
+color:#001018;
+
+background:linear-gradient(45deg,#3bd6ff,#1fa8d1);
+
+transform:translateY(-4px) scale(1.05);
+
+box-shadow:
+0 0 12px #3bd6ff,
+0 0 25px rgba(59,214,255,0.8),
+0 0 45px rgba(59,214,255,0.6);
+
+}
+
+/* ANIMACION DEL BRILLO */
+.game-card a:hover::before{
+left:100%;
+}
+
+.game-card:hover{
+
+transform:translateY(-12px) scale(1.06);
+
+box-shadow:
+0 18px 40px rgba(0,0,0,0.6),
+0 0 20px rgba(59,214,255,0.5);
+
+}
+
+/* INFO CARTA */
+.info{
+padding:35px 20px;
+text-align:center;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+min-height:220px;
+}
+
+.info h2,
+.info h3,
+.info h4{
+animation:floatTitle 4s ease-in-out infinite;
+min-height:48px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+@keyframes floatCard{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+@keyframes marioBounce{
+
+0%{transform:translateY(0);}
+10%{transform:translateY(-18px);}
+20%{transform:translateY(0);}
+30%{transform:translateY(-8px);}
+40%{transform:translateY(0);}
+100%{transform:translateY(0);}
+
+}
+
+.info a{
+margin-top:auto;
+}
+
+/* FEATURES */
+.features{
+display:flex;
+justify-content:center;
+gap:40px;
+margin:60px 0;
+flex-wrap:wrap;
+}
+
+.feature{
+background:#071a2a;
+border:1px solid #35d6ff;
+box-shadow:0 0 15px rgba(53,214,255,0.4);
+border-radius:20px;
+padding:40px;
+width:260px;
+text-align:center;
+animation:floatBox 4s ease-in-out infinite;
+}
+
+.feature:nth-child(2){animation-delay:1s;}
+.feature:nth-child(3){animation-delay:2s;}
+
+.feature i{
+font-size:40px;
+color:#35d6ff;
+margin-bottom:15px;
+}
+
+.feature p{
+color:#9bb3c7;
+}
+
+/* SOCIAL */
+.socials{
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+.socials a{
+color:var(--accent);
+font-size:30px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#020814;
+color:#777;
+}
+
+/* ESTRELLAS */
+.stars{
+position:fixed;
+inset:0;
+pointer-events:none;
+background:
+radial-gradient(1px 1px at 20% 30%,var(--accent) 50%,transparent 51%),
+radial-gradient(1px 1px at 80% 70%,#fff 50%,transparent 51%);
+animation:starsMove 20s linear infinite;
+opacity:.25;
+}
+
+
+
+/* ANIMACIONES */
+
+@keyframes glowTitle{
+0%{opacity:.7}
+50%{opacity:1}
+100%{opacity:.7}
+}
+
+@keyframes floatBox{
+0%{transform:translateY(0)}
+50%{transform:translateY(-15px)}
+100%{transform:translateY(0)}
+}
+
+@keyframes floatTitle{
+0%{transform:translateY(0)}
+50%{transform:translateY(-6px)}
+100%{transform:translateY(0)}
+}
+
+@keyframes starsMove{
+from{background-position:0 0;}
+to{background-position:1000px 1000px;}
+}
+
+/* PIXEL APARICION */
+
+@keyframes pixelReveal{
+
+0%{
+opacity:0;
+transform:scale(.6);
+filter:contrast(200%) blur(8px);
+clip-path:inset(100% 0 0 0);
+}
+
+25%{
+opacity:.4;
+clip-path:inset(75% 0 0 0);
+}
+
+50%{
+opacity:.6;
+clip-path:inset(50% 0 0 0);
+}
+
+75%{
+opacity:.8;
+clip-path:inset(25% 0 0 0);
+}
+
+100%{
+opacity:1;
+transform:scale(1);
+filter:none;
+clip-path:inset(0 0 0 0);
+}
+
+}
+
+@keyframes cardFadeUp{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.game-card:nth-child(1){animation-delay:.15s;}
+.game-card:nth-child(2){animation-delay:.30s;}
+.game-card:nth-child(3){animation-delay:.45s;}
+.game-card:nth-child(4){animation-delay:.60s;}
+.game-card:nth-child(5){animation-delay:.75s;}
+.game-card:nth-child(6){animation-delay:.90s;}
+.game-card:nth-child(7){animation-delay:1.05s;}
+.game-card:nth-child(8){animation-delay:1.20s;}
+
+.mario-title span:nth-child(1){animation-delay:0s;}
+.mario-title span:nth-child(2){animation-delay:.1s;}
+.mario-title span:nth-child(3){animation-delay:.2s;}
+.mario-title span:nth-child(4){animation-delay:.3s;}
+.mario-title span:nth-child(5){animation-delay:.4s;}
+.mario-title span:nth-child(6){animation-delay:.5s;}
+.mario-title span:nth-child(7){animation-delay:.6s;}
+.mario-title span:nth-child(8){animation-delay:.7s;}
+.mario-title span:nth-child(9){animation-delay:.8s;}
+.mario-title span:nth-child(10){animation-delay:.9s;}
+
+.mario-title span:nth-child(11){animation-delay:1s;}
+.mario-title span:nth-child(12){animation-delay:1.1s;}
+.mario-title span:nth-child(13){animation-delay:1.2s;}
+.mario-title span:nth-child(14){animation-delay:1.3s;}
+.mario-title span:nth-child(15){animation-delay:1.4s;}
+.mario-title span:nth-child(16){animation-delay:1.5s;}
+.mario-title span:nth-child(17){animation-delay:1.6s;}
+.mario-title span:nth-child(18){animation-delay:1.7s;}
+.mario-title span:nth-child(19){animation-delay:1.8s;}
+.mario-title span:nth-child(20){animation-delay:1.9s;}
+
+.overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+
+  height:60%;
+
+  background:linear-gradient(
+    to bottom,
+    rgba(2,8,20,0.95),
+    rgba(2,8,20,0.85),
+    transparent
+  );
+
+  backdrop-filter:blur(6px);
+
+  padding:10px 15px;
+
+  display:block;
+
+  opacity:0;
+  transform:translateY(-100%);
+  transition:all .35s ease;
+
+  overflow-y:auto;
+
+  border-bottom:1px solid rgba(59,214,255,0.3);
+}
+
+
+.overlay ul{
+  padding-left:16px;
+  margin-top:6px;
+}
+
+.overlay li{
+  margin:6px 0;
+  line-height:1.4;
+  font-size:13px;
+  color:#ccc;
+}
+
+.overlay strong{
+  color:#3bd6ff;
+  font-weight:600;
+}
+
+
+/* TEXTO */
+.overlay h4{
+  margin:0 0 8px 0;
+  color:#3bd6ff;
+  font-size:14px;
+}
+
+.overlay p{
+  margin:2px 0;
+  font-size:13px;
+  color:#ccc;
+}
+
+/* HOVER */
+.game-card:hover .overlay{
+  opacity:1;
+  transform:translateY(0);
+}
+
+body{
+cursor:url('images/cursor.png') 16 16, auto;
+}
+
+a, button{
+cursor:url('images/cursor-click.png') 16 16, pointer;
+}
+
+.btn-games{
+  background: linear-gradient(45deg, #ff0000, #ff4d4d);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+
+  box-shadow:
+  0 0 10px red,
+  0 0 25px rgba(255,0,0,0.6);
+
+  animation: pulseYT 1.5s infinite;
+}
+
+.btn-games:hover{
+  transform: scale(1.1);
+  box-shadow:
+  0 0 20px red,
+  0 0 40px rgba(255,0,0,0.8);
+}
+
+@keyframes pulseYT{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.05);}
+  100%{transform: scale(1);}
+}
+
+
+/* BOTON YOUTUBE (NO ROMPE TU CSS) */
+.game-card .info .btn-yt{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+
+  margin-top:10px;
+  padding:10px 20px;
+
+  background:linear-gradient(45deg,#ff0000,#ff4d4d);
+  color:white;
+
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+
+  border:1px solid rgba(255,0,0,0.6);
+
+  box-shadow:
+    0 0 10px red,
+    0 0 20px rgba(255,0,0,0.6);
+
+  transition:all .3s ease;
+}
+
+/* HOVER */
+.game-card .info .btn-yt:hover{
+  transform:scale(1.08);
+  background:linear-gradient(45deg,#ff1a1a,#ff6666);
+
+  box-shadow:
+    0 0 20px red,
+    0 0 40px rgba(255,0,0,0.8);
+}
+
+.info p{
+  margin-bottom:20px;
+}
