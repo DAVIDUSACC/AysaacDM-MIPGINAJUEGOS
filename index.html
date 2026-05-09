@@ -14,7 +14,7 @@
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
@@ -33,6 +33,36 @@ document.addEventListener("click", function() {
 </script>
 
 <body>
+
+  
+
+  <!-- LOADER GAMER -->
+
+<!-- LOADER -->
+
+<div id="loader">
+
+  <div class="loader-content">
+
+    <div class="loader-top">
+       NO OLVIDES SUSCRIBIRTE AL CANAL!!
+    </div>
+
+    <div class="loader-logo">
+      <img src="images/logo.ico.png" alt="Logo">
+    </div>
+
+    <h2>AysaacDM</h2>
+
+    <p>Cargando juegos...</p>
+
+    <div class="loader-bar">
+      <div class="loader-progress"></div>
+    </div>
+
+  </div>
+
+</div>
 
 <!-- NAVBAR -->
 
@@ -102,12 +132,59 @@ document.addEventListener("click", function() {
 
 </section>
 
+<!-- BUSCADOR GAMER PRO -->
+
+<div class="search-wrapper">
+
+  <div class="categories">
+
+    <button class="cat-btn active" data-category="all">
+      🔥 Todos
+    </button>
+
+    <button class="cat-btn" data-category="accion">
+      🎮 Acción
+    </button>
+
+    <button class="cat-btn" data-category="terror">
+         Terror
+    </button>
+
+    <button class="cat-btn" data-category="anime">
+       Anime
+    </button>
+
+    <button class="cat-btn" data-category="carreras">
+       Carreras
+    </button>
+
+    <button class="cat-btn" data-category="deportes">Deportes</button>
+    
+  </div>
+
+  <div class="search-box-pro">
+
+    <i class="fas fa-search"></i>
+
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Buscar juegos, sagas, géneros..."
+    >
+
+    <div class="search-glow"></div>
+
+  </div>
+
+</div>
 <div class="games-grid">
+
+  
 
 
 <!-- GTA SA -->
 
-<div class="game-card">
+<div class="game-card" data-category="accion bajos">
 <img src="images/gallery/Juegos/GTA SANDRI.jpeg">
 
 <div class="overlay">
@@ -137,7 +214,7 @@ document.addEventListener("click", function() {
 
 <!-- CUPHEAD -->
 
-<div class="game-card">
+<div class="game-card" data-category="accion anime bajos">
 <img src="images/gallery/Juegos/cup.png">
 
 <div class="overlay">
@@ -169,7 +246,7 @@ document.addEventListener("click", function() {
 
 <!-- FNAF -->
 
-<div class="game-card">
+<div class="game-card" data-category="terror bajos">
 <img src="images/gallery/Juegos/fnaf.png">
 
   <div class="overlay">
@@ -197,9 +274,41 @@ document.addEventListener("click", function() {
 </div>
 
 
+<!-- Kakarot-->
+
+<div class="game-card" data-category="anime accion">
+<img src="images/gallery/Juegos/Kakarot.jpg">
+
+<div class="overlay">
+  <h4>Requisitos</h4>
+
+<ul>
+  <li><strong>SO:</strong> Windows 7 SP1 / 10 (64-bit)</li>
+  <li><strong>CPU:</strong> Intel Core i5-2400 / AMD Phenom II X6 1100T</li>
+  <li><strong>GPU:</strong> GeForce GTX 750 Ti / Radeon HD 7950</li>
+  <li><strong>RAM:</strong> 4 GB</li>
+  <li><strong>DirectX:</strong> 11</li>
+  <li><strong>Almacenamiento:</strong> 36 GB</li>
+</ul>
+</div>
+
+<div class="info">
+<h3>Dragon Ball Kakarot</h3>
+<p>PC · Español · 48.07 GB</p>
+<a href="https://1shared.link/d/tyL8OWLxM-ZJ" target="_blank">Descargar</a>
+
+<a href="https://youtu.be/2BkRnjzjzXs?si=hHQ6nwTTK8gGv3MH" target="_blank" class="btn-yt">
+  <i class="fa-brands fa-youtube"></i> Video
+</a>
+
+</div>
+</div>
+
+
+
 <!-- XENOVERSE -->
 
-<div class="game-card">
+<div class="game-card" data-category="anime accion">
 <img src="images/gallery/Juegos/dbz.png">
 
 <div class="overlay">
@@ -222,36 +331,9 @@ document.addEventListener("click", function() {
 </div>
 </div>
 
-
-<!-- HYTALE -->
-
-<div class="game-card">
-<img src="images/gallery/Juegos/hytale.jpg">
-
-<div class="overlay">
-  <h4>Requisitos</h4>
-
-  <ul>
-    <li><strong>SO:</strong> Windows 10 o superior</li>
-    <li><strong>CPU:</strong> i5-7500 / Ryzen 3 1200 / M1</li>
-    <li><strong>GPU dedicada:</strong> GTX 900 / Radeon 400 / Arc A</li>
-    <li><strong>GPU integrada:</strong> UHD 620 / Vega 6 / M1</li>
-    <li><strong>RAM:</strong> 8 GB</li>
-    <li><strong>Almacenamiento:</strong> 10 GB SSD</li>
-  </ul>
-</div>
-
-<div class="info">
-<h3>Hytale</h3>
-<p>PC · Español · 3.34 GB</p>
-<a href="https://www.mediafire.com/file/l7bj8f8wfploxuz/Hytale_v2026.01.24_-_By_Unknown.rar/file" target="_blank">Descargar</a>
-</div>
-</div>
-
-
 <!-- DRAGON BALL FIGHTERZ -->
 
-<div class="game-card">
+<div class="game-card" data-category="anime accion">
 <img src="images/gallery/Juegos/fght.png">
 
 <div class="overlay">
@@ -282,7 +364,7 @@ document.addEventListener("click", function() {
 
 <!-- DEMON SLAYER -->
 
-<div class="game-card">
+<div class="game-card" data-category="accion anime bajos">
 <img src="images/gallery/Juegos/Demo.png">
 
 <div class="overlay">
@@ -315,7 +397,7 @@ document.addEventListener("click", function() {
 
 <!-- SIMPSONS -->
 
-<div class="game-card">
+<div class="game-card" data-category="accion bajos">
 <img src="images/gallery/Juegos/simp.jpg">
 
 <div class="overlay">
@@ -348,7 +430,7 @@ document.addEventListener("click", function() {
 
 <!-- THE FOREST -->
 
-<div class="game-card">
+<div class="game-card" data-category="terror accion">
 <img src="images/gallery/Juegos/thefore.png">
 
 <div class="overlay">
@@ -380,7 +462,7 @@ document.addEventListener("click", function() {
 
 <!-- MARIO KART -->
 
-<div class="game-card">
+<div class="game-card" data-category="carreras">
 <img src="images/gallery/Juegos/Mario.jpg">
 
 <div class="overlay">
@@ -410,7 +492,7 @@ document.addEventListener("click", function() {
 
 <!-- INJUSTICE -->
 
-<div class="game-card">
+<div class="game-card" data-category="accion">
 <img src="images/gallery/Juegos/Injus.webp">
 
 <div class="overlay">
@@ -442,7 +524,7 @@ document.addEventListener("click", function() {
 
 <!-- GTA V -->
 
-<div class="game-card">
+<div class="game-card" data-category="accion">
 <img src="images/gallery/Juegos/GTA V.png">
 
 <div class="overlay">
@@ -472,7 +554,7 @@ document.addEventListener("click", function() {
  
 <!--MK XL-->
 
-<div class="game-card">
+<div class="game-card" data-category="accion">
 <img src="images/gallery/Juegos/Escorpion.png">
 
 <div class="overlay">
@@ -501,7 +583,7 @@ document.addEventListener("click", function() {
 </div>
 </div>
 
-<div class="game-card">
+<div class="game-card" data-category="accion">
 <img src="images/gallery/Juegos/Hollow.png">
 <div class="overlay">
   <h4>Requisitos</h4>
@@ -528,7 +610,7 @@ document.addEventListener("click", function() {
 </div>
 </div>
 
-<div class="game-card">
+<div class="game-card" data-category="accion bajos">
 <img src="images/gallery/Juegos/Gta 4.png">
 
 <div class="overlay">
@@ -557,7 +639,7 @@ document.addEventListener("click", function() {
 </div>
 </div>
 
-<div class="game-card">
+<div class="game-card" data-category="accion">
 <img src="images/gallery/Juegos/Miles Morales.jpg">
 
 <div class="overlay">
@@ -585,7 +667,7 @@ document.addEventListener("click", function() {
 </div>
 </div>
 
-<div class="game-card">
+<div class="game-card" data-category="accion">
 <img src="images/gallery/Juegos/Spider man 2.jpg">
 
 <div class="overlay">
@@ -614,7 +696,7 @@ document.addEventListener("click", function() {
 </div>
 
 
-<div class="game-card">
+<div class="game-card" data-category="accion">
 <img src="images/gallery/Juegos/God of war.png">
 
 <div class="overlay">
@@ -643,7 +725,7 @@ document.addEventListener("click", function() {
 </div>
 </div>
 
-<div class="game-card">
+<div class="game-card" data-category="terror">
 <img src="images/gallery/Juegos/PO.png">
 
 <div class="overlay">
@@ -663,7 +745,7 @@ document.addEventListener("click", function() {
 </div>
 </div>
 
-<div class="game-card">
+<div class="game-card" data-category="accion">
 <img src="images/gallery/Juegos/Uncha.png">
 
 <div class="overlay">
@@ -690,7 +772,7 @@ document.addEventListener("click", function() {
 </div>
 </div>
 
-<div class="game-card">
+<div class="game-card" data-category="accion">
 <img src="images/gallery/Juegos/WIWI.png">
 
 <div class="overlay">
@@ -717,7 +799,7 @@ document.addEventListener("click", function() {
 </div>
 </div>
 
-<div class="game-card">
+<div class="game-card" data-category="accion">
 <img src="images/gallery/Juegos/Portada Chaves Nightmares Tutorial.png">
 
 <div class="overlay">
@@ -745,7 +827,7 @@ document.addEventListener("click", function() {
 </div>
 </div>
 
-<div class="game-card">
+<div class="game-card" data-category="terror">
 <img src="images/gallery/Juegos/Hello.png">
 
 <div class="overlay">
@@ -772,7 +854,7 @@ document.addEventListener("click", function() {
 </div>
 </div>
 
-<div class="game-card">
+<div class="game-card" data-category="terror bajos">
 <img src="images/gallery/Juegos/Fnaf 111.png">
 
 <div class="overlay">
@@ -801,7 +883,7 @@ Descargar</p>
 </div>
 </div>
 
-<div class="game-card">
+<div class="game-card" data-category="terror bajos">
 <img src="images/gallery/Juegos/Fnaf Two.png">
 
 <div class="overlay">
@@ -828,7 +910,7 @@ Descargar</p>
 </div>
 </div>
 
-<div class="game-card">
+<div class="game-card" data-category="terror">
 <img src="images/gallery/Juegos/Themimic.png">
 
 <div class="overlay">
@@ -854,7 +936,7 @@ Descargar</p>
 </div>
 </div>
 
-<div class="game-card">
+<div class="game-card" data-category="accion">
 <img src="images/gallery/Juegos/ScheduleOne.png">
 <div class="overlay">
   <h4>Requisitos</h4>
@@ -880,7 +962,7 @@ Descargar</p>
 </div>
 </div>
 
-<div class="game-card">
+<div class="game-card" data-category="deportes">
 <img src="images/gallery/Juegos/FIFA 17.png">
 
 <div class="overlay">
@@ -907,7 +989,7 @@ Descargar</p>
 </div>
 </div>
 
-<div class="game-card">
+<div class="game-card" data-category="deportes">
 <img src="images/gallery/Juegos/FF 18.jpg">
 
 <div class="overlay">
@@ -937,7 +1019,7 @@ Descargar</p>
 </div>
 
 
-<div class="game-card">
+<div class="game-card" data-category="accion">
 <img src="images/gallery/Juegos/BO2.png">
 
 <div class="overlay">
@@ -964,7 +1046,7 @@ Descargar</p>
 </div>
 </div>
 
-  <div class="game-card">
+<div class="game-card" data-category="accion terror">
 <img src="images/gallery/Juegos/thelast.png">
 
 <div class="overlay">
@@ -992,7 +1074,7 @@ Descargar</p>
 </div>
 </div>
 
-  <div class="game-card">
+<div class="game-card" data-category="anime accion">
 <img src="images/gallery/Juegos/NaruStorm.png">
 
 <div class="overlay">
@@ -1020,7 +1102,7 @@ Descargar</p>
 </div>
 </div>
 
-  <div class="game-card">
+<div class="game-card" data-category="carreras bajos">
 <img src="images/gallery/Juegos/Wanted Most.png">
 
 <div class="overlay">
@@ -1048,7 +1130,7 @@ Descargar</p>
 </div>
 </div>
 
-  <div class="game-card">
+<div class="game-card" data-category="Accion">
 <img src="images/gallery/Juegos/YUZU.png">
 
 <div class="overlay">
@@ -1076,7 +1158,7 @@ Descargar</p>
 </div>
 </div>
 
-  <div class="game-card">
+<div class="game-card" data-category="anime">
 <img src="images/gallery/Juegos/dbz ps2.jpg">
 
 <div class="overlay">
@@ -1104,7 +1186,7 @@ Descargar</p>
 </div>
 </div>
 
-  <div class="game-card">
+<div class="game-card" data-category="anime accion">
 <img src="images/gallery/Juegos/One Piece.jpg">
 
 <div class="overlay">
@@ -1132,7 +1214,7 @@ Descargar</p>
 </div>
 </div>
 
-  <div class="game-card">
+<div class="game-card" data-category="anime accion">
 <img src="images/gallery/Juegos/Sparking.jpg">
 
 <div class="overlay">
@@ -1160,7 +1242,7 @@ Descargar</p>
 </div>
 </div>
 
-  <div class="game-card">
+<div class="game-card" data-category="accion">
 <img src="images/gallery/Juegos/Watch Dogs.jpg">
 
 <div class="overlay">
@@ -1188,20 +1270,19 @@ Descargar</p>
 </div>
 </div>
 
-  <div class="game-card">
+<div class="game-card" data-category="accion bajos">
 <img src="images/gallery/Juegos/DMC.jpg">
 
 <div class="overlay">
   <h4>Requisitos</h4>
 
 <ul>
-<ul>
   <li><strong>SO:</strong> Windows Vista / Windows 7 / Windows 8</li>
   <li><strong>CPU:</strong> Intel Core 2 Duo a 2.4 GHz / AMD Athlon X2 a 2.8 GHz</li>
   <li><strong>GPU:</strong> NVIDIA GeForce 8800 GTS / AMD Radeon HD 3850</li>
   <li><strong>RAM:</strong> 2 GB</li>
   <li><strong>DirectX:</strong> Versión 9.0c</li>
-  <li><strong>Almacenamiento:</strong> 9 GB</li>s
+  <li><strong>Almacenamiento:</strong> 9 GB</li>
 </ul>
 </div>
 
@@ -1270,5 +1351,155 @@ El contenido es solo informativo...
 
 </footer>
 
+<audio id="bgMusic"></audio>
+
+<audio id="msgSound">
+  <source src="MUSIC/msg.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn">
+🔇 Música 
+</button>
+
+<script>
+
+
+/* LOADER */
+
+window.addEventListener("load", () => {
+
+    const loader = document.getElementById("loader");
+
+    setTimeout(() => {
+
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+
+            loader.style.display = "none";
+
+        }, 500);
+
+    }, 2500);
+
+});
+
+</script>
+
+</script>
+
+<script>
+
+const songs = [
+"MUSIC/song1.mp3",
+
+];
+
+const music = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+let currentSong = Math.floor(Math.random() * songs.length);
+
+/* CONFIG */
+
+music.volume = 0.05;
+music.src = songs[currentSong];
+
+/* INICIAR MUSICA */
+
+function startMusic(){
+
+    music.volume = 0.08;
+
+    music.play()
+    .then(() => {
+
+        musicBtn.innerHTML = "🔊 Música ON";
+
+    })
+    .catch(error => {
+
+        console.log("No se pudo reproducir:", error);
+
+    });
+
+}
+
+/* PRIMER CLICK */
+
+document.addEventListener("click", startMusic, { once:true });
+
+/* CAMBIAR CANCION */
+
+music.addEventListener("ended", () => {
+
+    currentSong++;
+
+    if(currentSong >= songs.length){
+        currentSong = 0;
+    }
+
+    music.src = songs[currentSong];
+
+    music.volume = 0.08;
+
+    music.play();
+
+});
+
+/* BOTON */
+
+musicBtn.addEventListener("click", () => {
+
+    if(music.paused){
+
+        music.play();
+        musicBtn.innerHTML = "🔊 Música ON";
+
+    }else{
+
+        music.pause();
+        musicBtn.innerHTML = "🔇 Música OFF";
+
+    }
+
+});
+
+</script>
+
+<script>
+
+const buttons = document.querySelectorAll(".cat-btn");
+const games = document.querySelectorAll(".game-card");
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+
+    buttons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    const category = btn.getAttribute("data-category").toLowerCase();
+
+    games.forEach(game => {
+
+      const gameCats = (game.getAttribute("data-category") || "").toLowerCase();
+
+      if (category === "all") {
+        game.style.display = "block";
+      } else {
+        if (gameCats.includes(category)) {
+          game.style.display = "block";
+        } else {
+          game.style.display = "none";
+        }
+      }
+
+    });
+
+  });
+});
+</script>
+
 </body>
 </html>
+
