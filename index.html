@@ -1,1600 +1,903 @@
-  <!DOCTYPE html>
-  <html lang="es">
-
-  <head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
   <meta charset="UTF-8">
-  <title>Aysaac_DM | Descarga Juegos PC</title>
-
-  <link rel="icon" href="images/logo.ico.png" type="image/png">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Aysaac_DM | Descarga Juegos PC</title>
+  <meta name="description" content="Juegos de PC con requisitos, peso, idioma y video en el canal de AysaacDM.">
+  <link rel="icon" href="images/logo.ico.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
-
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-
-  </head>
-
-
-
-  <body>
-    
-
-    
-
-    <!-- LOADER GAMER -->
-
-  <!-- LOADER -->
-
-  <div id="loader">
-
+  <div id="loader" role="status" aria-label="Cargando">
     <div class="loader-content">
-
-      <div class="loader-top">
-        NO OLVIDES SUSCRIBIRTE AL CANAL!!
-      </div>
-
-      <div class="loader-logo">
-        <img src="images/logo.ico.png" alt="Logo">
-      </div>
-
-      <h2>AysaacDM</h2>
-
-      <p>Cargando juegos...</p>
-
-      <div class="loader-bar">
-        <div class="loader-progress"></div>
-      </div>
-
+      <img class="loader-logo" src="images/logo.ico.png" alt="" onerror="this.style.display='none'">
+      <h2>Aysaac<span>DM</span></h2>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+      <p>No olvides suscribirte al canal</p>
     </div>
-
   </div>
-
-  <!-- NAVBAR -->
 
   <header class="navbar">
-
-  <div class="logo">🎮 Aysaac<span>DM</span></div>
-
-  <nav>
-  <a href="#inicio">Inicio</a>
-  <a href="#juegos">Juegos</a>
-  <a href="#redes">Redes</a>
-  <a href="#aviso">Aviso</a>
-  </nav>
-
+    <div class="container nav-inner">
+      <a class="logo" href="#inicio">
+        <img src="images/logo.ico.png" alt="" onerror="this.style.display='none'">
+        <span>Aysaac<b>DM</b></span>
+      </a>
+      <nav aria-label="Principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#juegos">Juegos</a>
+        <a href="#redes">Redes</a>
+        <a href="#aviso">Aviso</a>
+      </nav>
+    </div>
   </header>
 
-
-
-  <section class="hero" id="inicio">
-
-  <div class="hero-text">
-
-  <h1 class="mario-title">
-  <span>B</span><span>I</span><span>E</span><span>N</span><span>V</span><span>E</span><span>N</span><span>I</span><span>D</span><span>O</span>
-  &nbsp;
-  <span>A</span>
-  &nbsp;
-  <span>M</span><span>I</span>
-  &nbsp;
-  <span>P</span><span>A</span><span>G</span><span>I</span><span>N</span><span>A</span>
-  </h1>
-
-  <a href="https://www.youtube.com/@Aysaac__DM" target="_blank" class="btn btn-games">
-  <i class="fa-brands fa-youtube"></i>
-  <span>Suscribete al Canal!</span>
-  </a>
-
-  </div>
-
-  </section>
-
-  <!-- JUEGOS -->
-
-
-
-
-
-  <section class="section" id="juegos">
-
-  <h2>Últimos Juegos</h2>
-
-  <section class="features">
-
-  </section>
-
-  <!-- BUSCADOR -->
-
-  <div class="search-box">
-
-    <i class="fas fa-search"></i>
-
-    <input 
-      type="text" 
-      id="searchInput" 
-      placeholder="Buscar juego..."
-    >
-
-  </div>
-
-  <!-- CATEGORIAS -->
-
-<div class="categories">
-
-  <button class="cat-btn active" data-category="all">
-    Todos
-  </button>
-
-  <button class="cat-btn" data-category="accion">
-    Acción
-  </button>
-
-  <button class="cat-btn" data-category="terror">
-    Terror
-  </button>
-
-  <button class="cat-btn" data-category="anime">
-    Anime
-  </button>
-
-  <button class="cat-btn" data-category="carreras">
-    Carreras
-  </button>
-
-  <button class="cat-btn" data-category="deportes">
-    Deportes
-  </button>
-
-</div>
-
-  <div class="games-grid">
-
-
-    
-
-
-  <!-- GTA SA -->
-
- <div class="game-card" data-category="accion">
-  <img src="images/gallery/Juegos/GTA SANDRI.jpeg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 2000 / XP</li>
-      <li><strong>CPU:</strong> Pentium 4 o Athlon XP</li>
-      <li><strong>GPU:</strong> 128 MB (GeForce 6 recomendado)</li>
-      <li><strong>RAM:</strong> 384 MB</li>
-      <li><strong>Almacenamiento:</strong> 4.7 GB</li>
-      <li><strong>Audio:</strong> DirectX 9 (Sound Blaster Audigy 2 recomendado)</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>GTA San Andreas</h3>
-  <p>PC · Español · 3.09 GB</p>
-  <a href="https://www.mediafire.com/file/rllju7hpliow1r2/GTA+SAN+ANDREAS.rar/file" target="_blank">Descargar</a>
-
-  <a href="https://www.youtube.com/watch?v=k7CGiXMUijY" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-  </div>
-  </div>
-
-
-  <!-- CUPHEAD -->
-
- <div class="game-card" data-category="accion">
-  <img src="images/gallery/Juegos/cup.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 7 / 8 / 10</li>
-      <li><strong>CPU:</strong> i3 2100 / Athlon II X4 640</li>
-      <li><strong>RAM:</strong> 4 GB</li>
-      <li><strong>GPU:</strong> GT 240 1GB / Radeon 5570 1GB</li>
-      <li><strong>DirectX:</strong> 9.0</li>
-      <li><strong>Almacenamiento:</strong> 15 GB</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>Cuphead</h3>
-  <p>PC · Español · 4.5 GB</p>
-  <a href="https://www.mediafire.com/file/mxf8cq0v25fnnbp/Cuphead-Kira-gtaall.rar/file" target="_blank">Descargar</a>
-
-
-  <a href="https://youtu.be/Y2ePEMEddlQ?si=c9VdVTzlNTROynIb" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-
-  <!-- FNAF -->
-
-<div class="game-card" data-category="terror">
-  <img src="images/gallery/Juegos/fnaf.png">
-
-    <div class="overlay">
-  <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows XP / Vista / 7</li>
-      <li><strong>CPU:</strong> Pentium 4 2 GHz o equivalente</li>
-      <li><strong>GPU:</strong> 1 GB</li>
-      <li><strong>DirectX:</strong> 9.0</li>
-      <li><strong>Almacenamiento:</strong> 250 MB</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>FNAF</h3>
-  <p>PC · Español · 833 MB</p>
-  <a href="https://www.mediafire.com/file/dpvyp57zwkxah10/FNAF_REAL_TIME.rar/file/" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/ZVN8zI2u3Ow?si=3Av5zK5i4zygZqQC" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-
-  <!-- XENOVERSE -->
-
-<div class="game-card" data-category="anime">
-  <img src="images/gallery/Juegos/XENOVERSEEE1.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows Vista / 7 (64-bit)</li>
-      <li><strong>CPU:</strong> Core 2 Duo 2.4 GHz / Athlon X2 5200+</li>
-      <li><strong>GPU:</strong> GeForce 8800 / Radeon HD 3870 (512 MB)</li>
-      <li><strong>RAM:</strong> 2 GB</li>
-      <li><strong>DirectX:</strong> 9.0c</li>
-      <li><strong>Almacenamiento:</strong> 10 GB</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>Dragon Ball Xenoverse</h3>
-  <p>PC · Español · 8.66 GB</p>
-  <a href="https://1shared.link/d/6tYD4kFzE_CR" target="_blank">Descargar</a>
-
-   <a href="https://www.youtube.com/watch?v=-KepyLrRb-I" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-  
-
-</div>
-  </div>
-
-  <div class="game-card" data-category="anime">
-  <img src="images/gallery/Juegos/xenoversee2.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-<ul>
-  <li><strong>SO:</strong> Windows 10 / 11 (64-bit)</li>
-  <li><strong>CPU:</strong> Intel Core i5-4460 / AMD Ryzen 3 1200 o superior</li>
-  <li><strong>GPU:</strong> NVIDIA GeForce GTX 750 Ti / AMD Radeon HD 7850 o superior</li>
-  <li><strong>RAM:</strong> 8 GB</li>
-  <li><strong>DirectX:</strong> 11</li>
-  <li><strong>Almacenamiento:</strong> 17 GB o más</li>
-</ul>
-  </div>
-
-  <div class="info">
-  <h3>Dragon Ball Xenoverse 2</h3>
-  <p>PC · Español · 26.50 GB</p>
-  <a href="https://1shared.link/d/_0Cbdvd2vwU0" target="_blank">Descargar</a>
-
-   <a href="https://www.youtube.com/watch?v=_yi1lsTfALY" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-  
-
-</div>
-  </div>
-
-
-  <!-- HYTALE -->
-
-<div class="game-card" data-category="anime">
-  <img src="images/gallery/Juegos/Kakarot.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-<ul>
-  <li><strong>SO:</strong> Windows 10 64-bit</li>
-  <li><strong>CPU:</strong> Intel Core i5-2400 / AMD Phenom II X6 1100T</li>
-  <li><strong>GPU:</strong> GTX 750 Ti / Radeon HD 7950</li>
-  <li><strong>RAM:</strong> 8 GB</li>
-  <li><strong>Almacenamiento:</strong> 40 GB disponibles</li>
-  <li><strong>DirectX:</strong> Versión 11</li>
-</ul>
-  </div>
-
-  <div class="info">
-  <h3>Dragon Ball Kakarot</h3>
-  <p>PC · Español · 48.07 GB</p>
-  <a href="https://1shared.link/d/tyL8OWLxM-ZJ" target="_blank">Descargar</a>
-  
-  <a href="https://youtu.be/2BkRnjzjzXs?si=EoT9rq_goZgwVsqI" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-</div>
-  </div>
-
-
-  <!-- DRAGON BALL FIGHTERZ -->
-
-<div class="game-card" data-category="anime">
-  <img src="images/gallery/Juegos/fght.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 10+</li>
-      <li><strong>CPU:</strong> Intel Core i5-3470 / AMD Ryzen 3 1200</li>
-      <li><strong>GPU:</strong> NVIDIA GeForce GT 640 (2 GB) / AMD Radeon HD 7950 (3 GB)</li>
-      <li><strong>RAM:</strong> 6 GB</li>
-      <li><strong>DirectX:</strong> 11</li>
-      <li><strong>Almacenamiento:</strong> 30 GB</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>Dragon Ball FighterZ</h3>
-  <p>PC · Español · 6 GB</p>
-  <a href="https://1shared.link/d/jisxzUT22POE" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/g8d5e7popHY" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-
-  <!-- DEMON SLAYER -->
-
-<div class="game-card" data-category="anime">
-  <img src="images/gallery/Juegos/Demo.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 10+</li>
-      <li><strong>CPU:</strong> Intel Core i5-3470 / AMD Ryzen 3 1200</li>
-      <li><strong>GPU:</strong> NVIDIA GeForce GT 640 (2 GB) / AMD Radeon HD 7950 (3 GB)</li>
-      <li><strong>RAM:</strong> 6 GB</li>
-      <li><strong>DirectX:</strong> 11</li>
-      <li><strong>Almacenamiento:</strong> 30 GB</li>
-    </ul>
-  </div> <!-- ✅ ESTE CIERRE FALTABA -->
-
-  <div class="info">
-  <h3>Demon Slayer</h3>
-  <p>PC · Ingles · 11 GB</p>
-  <a href="https://www.mediafire.com/file/lxok8yq92onoi8n/DEMON_SLAYER.torrent/file" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/LftC0isSQis?si=gJVhBDRYR3LcnYRV" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-
-  <!-- SIMPSONS -->
-
-  <!-- SIMPSONS -->
-
-  <div class="game-card">
-  <img src="images/gallery/Juegos/simp.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Microsoft Windows 98 / ME / 2000 / XP</li>
-      <li><strong>CPU:</strong> Pentium III 1 GHz o equivalente</li>
-      <li><strong>GPU:</strong> Tarjeta 3D compatible con DirectX (64 MB VRAM, T&L)</li>
-      <li><strong>RAM:</strong> 256 MB</li>
-      <li><strong>DirectX:</strong> 8.1 o superior</li>
-      <li><strong>Audio:</strong> Tarjeta de sonido compatible con DirectX</li>
-      <li><strong>Almacenamiento:</strong> 2.2 GB</li>
-      <li><strong>Unidad:</strong> Lector CD-ROM 4X</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>Los Simpsons Hit and Run</h3>
-  <p>PC · Español · 2.12 GB</p>
-  <a href="https://www.mediafire.com/file/si2wusjzrmrt692/Los_Simpsons_Hit_and_Run_-_AysaacDM.rar/file" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/eVb5gvxaLbs?si=lA5Psq-jN1lP8d5y" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-
-  <!-- THE FOREST -->
-
-  <div class="game-card">
-  <img src="images/gallery/Juegos/thefore.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 7</li>
-      <li><strong>CPU:</strong> Procesador Quad Core</li>
-      <li><strong>GPU:</strong> NVIDIA GeForce GTX 560</li>
-      <li><strong>RAM:</strong> 4 GB</li>
-      <li><strong>DirectX:</strong> 9.0</li>
-      <li><strong>Almacenamiento:</strong> 5 GB</li>
-      <li><strong>Audio:</strong> Tarjeta de sonido compatible con DirectX</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>The Forest</h3>
-  <p>PC · Español · 3.06 GB</p>
-  <a href="https://www.mediafire.com/file/hulooi8ygowvgsw/The-Forest.rar/file" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/zpbExv3RAlw?si=oVa7ggSahKhgmR7b" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-
-  <!-- MARIO KART -->
-
-<div class="game-card" data-category="carreras">
-  <img src="images/gallery/Juegos/Mario.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 10 / 11</li>
-      <li><strong>CPU:</strong> Intel Core i5/i7 (8ª gen+) / Ryzen 5/7</li>
-      <li><strong>GPU:</strong> NVIDIA GTX 1060 / AMD RX 580 o superior</li>
-      <li><strong>RAM:</strong> 16 GB</li>
-      <li><strong>Almacenamiento:</strong> SSD requerido</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>Mario Kart 8 Deluxe</h3>
-  <p>PC · Español · 6 GB</p>
-  <a href="https://switchrom.net/mario-kart-8-deluxe-nsp-xci-rom-96/" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/JfQ8RovLNww?si=bmj4bAqeI0I1jKa8" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-
-  <!-- INJUSTICE -->
-
-<div class="game-card" data-category="accion">
-  <img src="images/gallery/Juegos/Injus.webp">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 7 / 10 (64-bit)</li>
-      <li><strong>CPU:</strong> Intel Core i3-2100 / AMD FX-6300 / Ryzen 5 1400</li>
-      <li><strong>GPU:</strong> GTX 780 / GTX 1060 6GB / Radeon R9 290 / RX 570</li>
-      <li><strong>RAM:</strong> 8 GB</li>
-      <li><strong>DirectX:</strong> 11</li>
-      <li><strong>Almacenamiento:</strong> 60 GB</li>
-      <li><strong>Internet:</strong> Conexión de banda ancha</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>Injustice 2</h3>
-  <p>PC · Español · 47 GB</p>
-  <a href="https://datanodes.to/gv3i48mowbk0/Injustice-2.zip" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/ZrdoLpiKttA?si=eS-G5pEdL9qdeAW8" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-
-  <!-- GTA V -->
-
-<div class="game-card" data-category="accion">
-  <img src="images/gallery/Juegos/GTA V.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 7 / 8 / 10 (64-bit)</li>
-      <li><strong>CPU:</strong> Intel Core 2 Quad Q6600 / AMD Phenom 9850</li>
-      <li><strong>GPU:</strong> NVIDIA 9800 GT / AMD HD 4870 (1 GB)</li>
-      <li><strong>RAM:</strong> 4 GB</li>
-      <li><strong>DirectX:</strong> 10</li>
-      <li><strong>Almacenamiento:</strong> 72 GB</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>GTA V</h3>
-  <p>PC · Español · 123 GB</p>
-  <a href="https://gofile.io/d/Ou8TXe" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/x8QksO8FFbA?si=K8o90Puqe4bAYfMU" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-  
-  <!--MK XL-->
-
-  <div class="game-card">
-  <img src="images/gallery/Juegos/MK XL.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 7 / 8 (64-bit)</li>
-      <li><strong>CPU:</strong> Intel Core i7-3770 / AMD FX-8350</li>
-      <li><strong>GPU:</strong> NVIDIA GTX 660 / AMD Radeon HD 7950</li>
-      <li><strong>RAM:</strong> 8 GB</li>
-      <li><strong>DirectX:</strong> 11</li>
-      <li><strong>Almacenamiento:</strong> 40 GB</li>
-      <li><strong>Internet:</strong> Conexión de banda ancha</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>MORTAL KOMBAT XL</h3>
-  <p>PC · Español · 36.67 GB</p>
-  <a href="https://www.mediafire.com/file/e4iuf472avoes6b/MKXL.rar/file" target="_blank">Descargar</a>
-
-  <a href="https://www.youtube.com/watch?v=lbAFfzWpcL4" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-  <div class="game-card">
-  <img src="images/gallery/Juegos/MK9.webp">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-<ul>
-  <li><strong>SO:</strong> Windows 7 / Windows 8 (64-bit)</li>
-  <li><strong>CPU:</strong> Intel Core i5-750 / AMD Phenom II X4 965</li>
-  <li><strong>GPU:</strong> NVIDIA GeForce GTX 560 / AMD Radeon HD 6950</li>
-  <li><strong>RAM:</strong> 4 GB</li>
-  <li><strong>DirectX:</strong> 11</li>
-  <li><strong>Almacenamiento:</strong> 10 GB</li>
-  <li><strong>Internet:</strong> Conexión de banda ancha para multijugador</li>
-</ul>
-  </div>
-
-  <div class="info">
-  <h3>MORTAL KOMBAT 9 Komplete Edition</h3>
-  <p>PC · Español · 9.1 GB</p>
-  <a href="https://gofile.io/d/JQNj1j" target="_blank">Descargar</a>
-
-  <a href="https://www.youtube.com/watch?v=AWJG5EyeAgQ" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-
-
-  <div class="game-card">
-  <img src="images/gallery/Juegos/Hollow.png">
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 10 (64-bit, versión 21H1 o superior)</li>
-      <li><strong>CPU:</strong> Intel Core i5-3470</li>
-      <li><strong>GPU:</strong> NVIDIA GTX 1050 (2 GB) / AMD Radeon R9 380 (2 GB)</li>
-      <li><strong>RAM:</strong> 8 GB</li>
-      <li><strong>DirectX:</strong> 10</li>
-      <li><strong>Almacenamiento:</strong> 8 GB</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>Hollow Knight Silksong</h3>
-  <p>PC · Español · 3.89 GB</p>
-  <a href="https://www.mediafire.com/file/uq3wbmh0yfks621/Hollow-Knight-Silksong.rar/file" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/v2HTF9mJuIM?si=-pDcoWxQ5FKewa14" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-<div class="game-card" data-category="accion">
-  <img src="images/gallery/Juegos/Gta 4.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows XP SP3 / Vista SP1</li>
-      <li><strong>CPU:</strong> Intel Core 2 Duo 1.8 GHz / AMD Athlon X2 64 2.4 GHz</li>
-      <li><strong>GPU:</strong> NVIDIA 7900 (256 MB) / ATI X1900 (256 MB)</li>
-      <li><strong>RAM:</strong> 1.5 GB</li>
-      <li><strong>DirectX:</strong> 9.0c</li>
-      <li><strong>Almacenamiento:</strong> 16 GB</li>
-      <li><strong>Audio:</strong> Sonido 5.1</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>Grand Theft Auto IV</h3>
-  <p>PC · Español · 13.06 GB</p>
-  <a href="https://www.mediafire.com/file/7sndfezerrkvqgr/GTA_IV-COMPLETE_EDITION-AysaacDM.torrent/file" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/Q7-R24AKPnU?si=D31Xmzzx5YleMnV8" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-<div class="game-card" data-category="accion">
-  <img src="images/gallery/Juegos/Miles Morales.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-  <ul>
-    <li><strong>SO:</strong> Windows 10 (64-bit, versión 1909 o superior)</li>
-    <li><strong>CPU:</strong> Intel Core i3-4160 / AMD equivalente</li>
-    <li><strong>GPU:</strong> NVIDIA GTX 950 (2 GB) / AMD Radeon RX 470 (4 GB)</li>
-    <li><strong>RAM:</strong> 8 GB</li>
-    <li><strong>DirectX:</strong> 12</li>
-    <li><strong>Almacenamiento:</strong> 75 GB disponibles (SSD recomendado)</li>
-  </ul>
-  </div>
-
-  <div class="info">
-  <h3>Spider Man-Miles Morales </h3>
-  <p>PC · Español · 37.23 GB</p>
-  <a href="https://1shared.link/d/0CHzx5cElJj2" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/RDIRr7aKFV4?si=bJXXhhI3tgtU002g" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-<div class="game-card" data-category="accion">
-  <img src="images/gallery/Juegos/Spider man 2.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-  <ul>
-    <li><strong>SO:</strong> Windows 10/11 (64-bit, versión 1909 o superior)</li>
-    <li><strong>CPU:</strong> Intel Core i3-8100 / AMD Ryzen 3 3100</li>
-    <li><strong>GPU:</strong> NVIDIA GTX 1650 / AMD Radeon RX 5500 XT</li>
-    <li><strong>RAM:</strong> 16 GB</li>
-    <li><strong>DirectX:</strong> 12</li>
-    <li><strong>Almacenamiento:</strong> 140 GB disponibles (SSD requerido)</li>
-  </ul>
-  </div>
-
-  <div class="info">
-  <h3>Spider Man-2 Deluxe Edition </h3>
-  <p>PC · Español · 96.0 GB</p>
-  <a href="https://datavaults.co/yp5kbhxeerxx/Marvels_SpiderMan_2_Deluxe_Edition-papugames.com.rar" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/6_sUkpKZAJE" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-
-  <div class="game-card">
-  <img src="images/gallery/Juegos/God of war.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 10 (64-bit)</li>
-      <li><strong>CPU:</strong> Intel Core i5-6600K / AMD Ryzen 5 2400G</li>
-      <li><strong>GPU:</strong> NVIDIA GTX 960 / AMD Radeon R9 290X</li>
-      <li><strong>RAM:</strong> 8 GB</li>
-      <li><strong>Almacenamiento:</strong> 70 GB (SSD recomendado)</li>
-    </ul>
-  </div>
-
-
-
-  <div class="info">
-  <h3>GOD OF WAR IV </h3>
-  <p>PC · Español · 35.05 GB</p>
-  <a href="https://www.mediafire.com/folder/swuclq35m66q6/GOD+OF+WAR" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/aD1RVe-7BcU?si=QMJ9nOoqsbtQqt_G" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-  <div class="game-card">
-  <img src="images/gallery/Juegos/PO.png">
-
-  <div class="overlay">
-    <h4>Sin Informacion</h4>
-
-  </div>
-
-  <div class="info">
-  <h3>POPPY PLAYTIME</h3>
-  <p>PC · Español · 52.08 GB</p>
-  <a href="https://1fichier.com/?x3nkk13f1fdglr8r9c07" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/lc-afSa7T_Q?si=jQw2649d3f7Kq7FPss" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-<div class="game-card" data-category="accion">
-  <img src="images/gallery/Juegos/Uncha.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 10 (64-bit)</li>
-      <li><strong>CPU:</strong> Intel Core i7-4770 / AMD Ryzen 5 1500X</li>
-      <li><strong>GPU:</strong> NVIDIA GTX 1060 (6 GB) / AMD RX 570 (4 GB)</li>
-      <li><strong>RAM:</strong> 16 GB</li>
-      <li><strong>Almacenamiento:</strong> 126 GB (SSD)</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>UNCHARTED 4 </h3>
-  <p>PC · Español · 68.06 GB</p>
-  <a href="https://www.mediafire.com/file/qtia1zds30el7pl/Unchar4-Aysaac.torrent/file" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/zYc_GRiYPDU?si=0aTyaL4vs3pPaukDs" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-  <div class="game-card">
-  <img src="images/gallery/Juegos/WIWI.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 7 / 8 / 10 (64-bit)</li>
-      <li><strong>CPU:</strong> Intel Core i7-3770 / AMD FX-8350</li>
-      <li><strong>GPU:</strong> NVIDIA GTX 770 / AMD Radeon R9 290</li>
-      <li><strong>RAM:</strong> 8 GB</li>
-      <li><strong>Almacenamiento:</strong> 35–40 GB</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>THE WITCHER 3 </h3>
-  <p>PC · Español · 55.06 GB</p>
-  <a href="https://www.mediafire.com/file/x9ysldxnsbx9qx3/The.Witcher.3.Wild.Hunt.Complete.Edition-AysaacDM.torrent/file" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/YZ1cgWrRvB8?si=48VVigAeGHJvuaPL" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-<div class="game-card" data-category="terror">
-  <img src="images/gallery/Juegos/Portada Chaves Nightmares Tutorial.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 7 / 10 / 11</li>
-      <li><strong>CPU:</strong> Doble núcleo 2.0 GHz o superior</li>
-      <li><strong>GPU:</strong> Integrada o dedicada compatible con DirectX 9.0</li>
-      <li><strong>RAM:</strong> 2–4 GB</li>
-      <li><strong>DirectX:</strong> 9.0 o superior</li>
-      <li><strong>Almacenamiento:</strong> &lt; 1 GB</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>CHAVES NAIGHTMARE</h3>
-  <p>PC · Español · 43.04 MB</p>
-  <a href="https://www.malavida.com/es/soft/chaves-nightmares/descargar" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/OWZouzxcSBg?si=BexVq_-gNTwf_Om3" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-  <div class="game-card">
-  <img src="images/gallery/Juegos/Hello.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 10</li>
-      <li><strong>CPU:</strong> Intel Core i7</li>
-      <li><strong>GPU:</strong> NVIDIA GTX 1060</li>
-      <li><strong>RAM:</strong> 8 GB</li>
-      <li><strong>Almacenamiento:</strong> 5 GB</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>Hello Neighbor Fredbear Mod</h3>
-  <p>PC · Español · 1.83 GB</p>
-  <a href="https://www.mediafire.com/file/u7tkummcssv2wn1/Hello-Neighbor.rar/filee" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/xM3cNROPk_g?si=5rQPbwM7fXE6-mqS" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-<div class="game-card" data-category="terror">
-  <img src="images/gallery/Juegos/Fnaf 111.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 10 (64-bit)</li>
-      <li><strong>CPU:</strong> Intel Core i5-6600K / AMD Ryzen 5 3600</li>
-      <li><strong>GPU:</strong> NVIDIA GTX 1050 Ti</li>
-      <li><strong>RAM:</strong> 8 GB</li>
-      <li><strong>DirectX:</strong> 12</li>
-      <li><strong>Almacenamiento:</strong> 80 GB</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>FIVE NIGHT AT FREDDY  </h3>
-  <p>PC · Español ·  218.1 MB
-  Descargar</p>
-  <a href="https://www.mediafire.com/file/ifx3l9trkdzwfkr/Five_Ninght_at_Freddy_1-AysaacDM.rar/file" target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/Zkbb5Ae6PUQ?si=k8vKd-am1DBChCfd" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-<div class="game-card" data-category="terror">
-  <img src="images/gallery/Juegos/Fnaf Two.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows XP / Vista / 7 / 8 o superior</li>
-      <li><strong>CPU:</strong> Pentium 4 2 GHz / AMD Athlon o equivalente</li>
-      <li><strong>GPU:</strong> 1 GB VRAM</li>
-      <li><strong>RAM:</strong> 1 GB</li>
-      <li><strong>Almacenamiento:</strong> 250 MB</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>FIVE NIGHT AT FREDDY 2</h3>
-  <p>PC · Español ·   205.69 MB</p>
-  <a href="https://www.mediafire.com/file/t1cs9zsh998l6fy/Five_Ninght_at_Freddy_2-AysaacDM.rar/file"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/BKmQodN9JxU?si=tS7_o3Q41yrCXhft" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-<div class="game-card" data-category="terror">
-  <img src="images/gallery/Juegos/Themimic.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>CPU:</strong> Superior a Intel Core i5-8400 / AMD Ryzen 5 1500X</li>
-      <li><strong>GPU:</strong> Superior a NVIDIA GTX 1070 / AMD RX Vega 56</li>
-      <li><strong>RAM:</strong> 16 GB</li>
-      <li><strong>Almacenamiento:</strong> 20 GB (SSD recomendado)</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>Five Nights at Freddy's Secret of the Mimic </h3>
-  <p>PC · Español ·  18.06 GB</p>
-  <a href="https://www.mediafire.com/file/eftxlaxptseg81b/Five+Nights+at+Freddys+Secret+of+the+Mimic.torrent/file"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/eQWWmkOiyJk?si=4NnY80EOL-YefNFz" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-  <div class="game-card">
-  <img src="images/gallery/Juegos/ScheduleOne.png">
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 10 (64-bit)</li>
-      <li><strong>CPU:</strong> 6 núcleos a 3.5 GHz o similar</li>
-      <li><strong>GPU:</strong> NVIDIA RTX 3060 / AMD Radeon RX 6700</li>
-      <li><strong>RAM:</strong> 16 GB</li>
-      <li><strong>Almacenamiento:</strong> 8 GB</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>Schedule I </h3>
-  <p>PC · Español · 1.89 GB</p>
-  <a href="https://app.mediafire.com/folder/126sf94c0lwcd/S"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/QebjsWxHUNE?si=CWXoYq6IXS_ex2Qm" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-<div class="game-card" data-category="deportes">
-  <img src="images/gallery/Juegos/FIFA 17.png">
-
-  <div class="overlay">
-    <h4>Requisitos </h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows 7 / 8.1 / 10 (64-bit)</li>
-      <li><strong>CPU:</strong> Intel Core i5-3550K / AMD FX-8150</li>
-      <li><strong>GPU:</strong> NVIDIA GTX 660 / AMD Radeon R9 270</li>
-      <li><strong>RAM:</strong> 8 GB</li>
-      <li><strong>Almacenamiento:</strong> 50 GB</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>FIFA 17 </h3>
-  <p>PC · Español · 38.06 GB</p>
-  <a href="https://1shared.link/d/Senv5f9YnMhg"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/GuDiaIpCKlc?si=xVkV7uG1Xeo1W7tl" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-<div class="game-card" data-category="deportes">
-  <img src="images/gallery/Juegos/FF 18.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos </h4>
-
-  <ul>
-    <li><strong>SO:</strong> Windows 7 / 8.1 / 10 (64-bit)</li>
-    <li><strong>CPU (Mínimo):</strong> Intel Core i3-2100 / AMD Phenom II X4 965</li>
-    <li><strong>CPU (Recomendado):</strong> Intel Core i5-3550K / AMD FX-8150</li>
-    <li><strong>GPU (Mínimo):</strong> NVIDIA GTX 460 / AMD Radeon R7 260</li>
-    <li><strong>GPU (Recomendado):</strong> NVIDIA GTX 660 / AMD Radeon R9 270</li>
-    <li><strong>RAM:</strong> 8 GB</li>
-    <li><strong>Almacenamiento:</strong> 50 GB</li>
-  </ul>
-  </div>
-
-  <div class="info">
-  <h3>FIFA 18 </h3>
-  <p>PC · Español · 34.68 GB</p>
-  <a href="https://1shared.link/d/4E9R9jRFX38C"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/hKkwrOUuesc" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-<div class="game-card" data-category="deportes">
-  <img src="images/gallery/Juegos/PES2013.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos </h4>
-
-<ul>
-  <li><strong>SO:</strong> Windows XP / Vista / 7</li>
-  <li><strong>CPU (Mínimo):</strong> Intel Pentium IV 2.4 GHz / AMD equivalente</li>
-  <li><strong>CPU (Recomendado):</strong> Intel Core 2 Duo 2.0 GHz / AMD Athlon X2</li>
-  <li><strong>GPU (Mínimo):</strong> NVIDIA GeForce 6600 / ATI Radeon X1300</li>
-  <li><strong>GPU (Recomendado):</strong> NVIDIA GeForce 7900 / ATI Radeon HD 2400</li>
-  <li><strong>RAM:</strong> 1 GB</li>
-  <li><strong>Almacenamiento:</strong> 8 GB</li>
-</ul>
-  </div>
-
-  <div class="info">
-  <h3>PRO EVOLUTION SOCCER 2013 </h3>
-  <p>PC · Español · 4.44 GB</p>
-  <a href="https://www.mediafire.com/folder/u1ijtekcqqt0k/PES"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/YQBJc6xtZ7s" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-
-
-  <div class="game-card">
-  <img src="images/gallery/Juegos/BO2.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-    <ul>
-      <li><strong>SO:</strong> Windows Vista SP2 / 7 (XP no compatible)</li>
-      <li><strong>CPU:</strong> Intel Core 2 Duo E8200 / AMD Phenom X3 8750</li>
-      <li><strong>GPU:</strong> NVIDIA GeForce 8800GT (512 MB) / ATI Radeon HD 3870 (512 MB)</li>
-      <li><strong>RAM:</strong> 2 GB (32-bit) / 4 GB (64-bit)</li>
-      <li><strong>DirectX:</strong> 9.0c</li>
-    </ul>
-  </div>
-
-  <div class="info">
-  <h3>Call of Duty Black Ops II </h3>
-  <p>PC · Español · 13.68 GB</p>
-  <a href="https://drive.google.com/file/d/1HohjDEmUNUg3o8-_xkzunCbF-tr8hE_K/view"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/lJNsv940MEc?si=1_fxosFfpMsruI8L" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-<div class="game-card" data-category="accion">
-  <img src="images/gallery/Juegos/thelast.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-  <ul>
-    <li><strong>SO:</strong> Windows 10 (64-bit versión 1909 o superior)</li>
-    <li><strong>CPU:</strong> Intel Core i7-4770K / AMD Ryzen 5 1500X</li>
-    <li><strong>GPU:</strong> NVIDIA GeForce GTX 970 (4 GB) / AMD Radeon RX 470 (4 GB)</li>
-    <li><strong>RAM:</strong> 16 GB</li>
-    <li><strong>DirectX:</strong> Versión 12</li>
-    <li><strong>Almacenamiento:</strong> 100 GB (SSD recomendado)</li>
-  </ul>
-  </div>
-
-  <div class="info">
-  <h3> The Last Of Us Parte I</h3>
-  <p>PC · Español · 66.14 GB</p>
-  <a href="https://www.mediafire.com/file/otuncoq9cwazi83/the_last_of_us-AysaacDM.torrent/file"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/SP2pu2-E5iY?si=sj7UcCD0K-xJcMmL" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-  <div class="game-card" data-category="anime">
-  <img src="images/gallery/Juegos/NARUTO CONNNECTION.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-  <ul>
-    <li><strong>SO:</strong> Windows 7 (64-bit) o superior</li>
-    <li><strong>CPU:</strong> Intel Core i3-530 / AMD Phenom II X4 940</li>
-    <li><strong>GPU:</strong> Tarjeta gráfica de 1 GB (compatible con DirectX 10)</li>
-    <li><strong>RAM:</strong> 4 GB</li>
-    <li><strong>DirectX:</strong> Versión 11</li>
-    <li><strong>Almacenamiento:</strong> 40 GB</li>
-  </ul>
-  </div>
-
-  <div class="info">
-  <h3> NARUTO Ultimate Ninja STORM Connections!</h3>
-  <p>PC · Español · 24.07 GB</p>
-  <a href="https://1shared.link/d/41KqsEICVYvR"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/ELdUimZAKRw" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-  <div class="game-card" data-category="carreras">
-  <img src="images/gallery/Juegos/Wanted Most.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-  <ul>
-    <li><strong>SO:</strong> Windows XP (32-bit)</li>
-    <li><strong>CPU:</strong> Intel Pentium 4 (1.4 GHz) / AMD equivalente</li>
-    <li><strong>GPU:</strong> 64 MB (compatible con DirectX 9.0c)</li>
-    <li><strong>RAM:</strong> 256 MB</li>
-    <li><strong>DirectX:</strong> Versión 9.0c</li>
-    <li><strong>Almacenamiento:</strong> 3 GB</li>
-  </ul>
-  </div>
-
-  <div class="info">
-  <h3>Need For Speed Most Wanted</h3>
-  <p>PC · Español · 2.08 GB</p>
-  <a href="https://www.mediafire.com/file/93vq18wr3e6ncdn/NFS_Most_Wanted_-_AysaacDM.rar/file"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/jyvSn9PcbjI?si=Q7BZCVve-9-fwOow" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-  <div class="game-card" data-category="carreras">
-  <img src="images/gallery/Juegos/Need for Speed Payback.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-<ul>
-  <li><strong>SO:</strong> Windows 7 / 8.1 / 10 (64-bit)</li>
-  <li><strong>CPU:</strong> Intel i3 6300 (3.8 GHz) / AMD FX 8150</li>
-  <li><strong>GPU:</strong> NVIDIA GeForce GTX 750 Ti / AMD Radeon HD 7850 (2 GB VRAM)</li>
-  <li><strong>RAM:</strong> 6 GB</li>
-  <li><strong>DirectX:</strong> Versión 11</li>
-  <li><strong>Almacenamiento:</strong> 30 GB</li>
-</ul>
-  </div>
-
-  <div class="info">
-  <h3>Need For Speed Payback</h3>
-  <p>PC · Español · 15.97 GB</p>
-  <a href="https://1shared.link/d/S_usFO6ruiYh"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/hz4gmTfh8qs" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-
-    <div class="game-card">
-  <img src="images/gallery/Juegos/YUZU.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-  <ul>
-    <li><strong>SO:</strong> Windows 10 (64-bit) o superior</li>
-    <li><strong>CPU:</strong> Intel Core i5-4430 / AMD Ryzen 3 1200 o superior</li>
-    <li><strong>GPU:</strong> NVIDIA GeForce GTX 1050 / AMD Radeon RX 560 o superior (compatible con OpenGL 4.6 o Vulkan)</li>
-    <li><strong>RAM:</strong> 8 GB</li>
-    <li><strong>DirectX:</strong> No requerido (usa OpenGL/Vulkan)</li>
-    <li><strong>Almacenamiento:</strong> 10 GB o más</li>
-  </ul>
-  </div>
-
-  <div class="info">
-  <h3>Emulador YUZU</h3>
-  <p>PC · Español · 78.62 MB</p>
-  <a href="https://app.mediafire.com/folder/syhaqeozubwdq"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/JfQ8RovLNww?si=3nicwHzRbYwWNRzk" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-    <div class="game-card">
-  <img src="images/gallery/Juegos/dbz ps2.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-  <ul>
-    <li><strong>SO:</strong> Windows 10 (64-bit) o superior</li>
-    <li><strong>CPU:</strong> Intel Core i3-2100 / AMD FX-4300 o superior</li>
-    <li><strong>GPU:</strong> NVIDIA GeForce GTX 750 / AMD Radeon HD 7850 o superior (compatible con OpenGL 4.5 o Vulkan)</li>
-    <li><strong>RAM:</strong> 4 GB (8 GB recomendado)</li>
-    <li><strong>DirectX:</strong> No requerido (usa OpenGL/Vulkan)</li>
-    <li><strong>Almacenamiento:</strong> 5 GB o más</li>
-  </ul>
-  </div>
-
-  <div class="info">
-  <h3>DBZ BUDOKAI TENKAICHI 3 CROSSOVER</h3>
-  <p>PC · Español · 3.15 GB</p>
-  <a href="https://www.mediafire.com/file/83mr2gcbupad8xk/DRAGON_BALL_ULTRA_CROSSOVER.iso/file"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/roX-xk45BRE?si=lRomd82Uw9OTQQw7" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-  <div class="game-card" data-category="anime">
-  <img src="images/gallery/Juegos/One Piece.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-  <ul>
-    <li><strong>SO:</strong> Windows 10 (64-bit)</li>
-    <li><strong>CPU:</strong> Intel Core i5-3450 / AMD Ryzen 3 1300X o superior</li>
-    <li><strong>GPU:</strong> NVIDIA GeForce GTX 660 (2 GB) / AMD Radeon HD 7870 (2 GB)</li>
-    <li><strong>RAM:</strong> 8 GB</li>
-    <li><strong>DirectX:</strong> Versión 11</li>
-    <li><strong>Almacenamiento:</strong> 25 GB o más</li>
-  </ul>
-  </div>
-
-  <div class="info">
-  <h3>ONE PIECE PIRATE WARRRIOR 4</h3>
-  <p>PC · Español · 24.79 GB</p>
-  <a href="https://www.mediafire.com/file/6kkge3ewb4ipgod/1769178985-One.Piece.Pirate.Warriors.4.Legendary.Edition-RUNE.torrent/file"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/ZaFao-4OPz0?si=ZGlVre7cZAibBllA" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-  <div class="game-card" data-category="anime">
-  <img src="images/gallery/Juegos/Sparking.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-  <ul>
-    <li><strong>SO:</strong> Windows 10 (64-bit) o superior</li>
-    <li><strong>CPU:</strong> Intel Core i5-9600K / AMD Ryzen 5 2600 o superior</li>
-    <li><strong>GPU:</strong> NVIDIA GeForce RTX 2060 / AMD Radeon RX 5700 o superior</li>
-    <li><strong>RAM:</strong> 16 GB</li>
-    <li><strong>DirectX:</strong> Versión 12</li>
-    <li><strong>Almacenamiento:</strong> 50 GB o más</li>
-  </ul>
-  </div>
-
-  <div class="info">
-  <h3>SPARKING ZERO</h3>
-  <p>PC · Español · 25.43 GB</p>
-  <a href="https://www.mediafire.com/file/276imot4o1nfyk4/DBZ+SPARKING+ZERO-AysaacDM.torrent/file"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/KvfzRCbNzaQ" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-<div class="game-card" data-category="accion">
-  <img src="images/gallery/Juegos/Watch Dogs.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-  <ul>
-    <li><strong>SO:</strong> Windows Vista (SP2), Windows 7 (SP1) o Windows 8 (solo 64-bit)</li>
-    <li><strong>CPU:</strong> Intel Core 2 Quad Q8400 / AMD Phenom II X4 940 o superior</li>
-    <li><strong>GPU:</strong> NVIDIA GeForce GTX 460 / AMD Radeon HD 5770 o superior</li>
-    <li><strong>RAM:</strong> 6 GB</li>
-    <li><strong>DirectX:</strong> Versión 11</li>
-    <li><strong>Almacenamiento:</strong> 25 GB</li>
-  </ul>
-  </div>
-
-  <div class="info">
-  <h3>Watch Dogs</h3>
-  <p>PC · Español · 21.23 GB</p>
-  <a href="https://www.mediafire.com/file/yvlcvhro9yylij0/Watch+Dogs+Complete+Edition.iso.torrent/file"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/jDEZok-iDpg" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-  <div class="game-card" data-category="accion">
-  <img src="images/gallery/Juegos/DMC.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-  <ul>
-  <ul>
-    <li><strong>SO:</strong> Windows Vista / Windows 7 / Windows 8</li>
-    <li><strong>CPU:</strong> Intel Core 2 Duo a 2.4 GHz / AMD Athlon X2 a 2.8 GHz</li>
-    <li><strong>GPU:</strong> NVIDIA GeForce 8800 GTS / AMD Radeon HD 3850</li>
-    <li><strong>RAM:</strong> 2 GB</li>
-    <li><strong>DirectX:</strong> Versión 9.0c</li>
-    <li><strong>Almacenamiento:</strong> 9 GB</li>
-  </ul>
-  </div>
-
-  <div class="info">
-  <h3>DMC - Devil My Cry</h3>
-  <p>PC · Español · 7.58 GB</p>
-  <a href="https://1shared.link/d/Wrn08e2Of807"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/QWwDKBHIXuE" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-    <div class="game-card" data-category="accion">
-  <img src="images/gallery/Juegos/Dark Soul II.jpg">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-  <ul>
-<ul>
-  <li><strong>SO:</strong> Windows 7 SP1 64bit / Windows 8.1 64bit</li>
-  <li><strong>CPU:</strong> Intel Core i3-2100 a 3.1 GHz / AMD A8 3870 a 3.6 GHz</li>
-  <li><strong>GPU:</strong> NVIDIA GeForce GTX 465 / AMD Radeon HD 6870</li>
-  <li><strong>RAM:</strong> 4 GB</li>
-  <li><strong>DirectX:</strong> Versión 11</li>
-  <li><strong>Almacenamiento:</strong> 23 GB</li>
-</ul>
-  </div>
-
-  <div class="info">
-  <h3>Dark Souls II Scholar of the First Sin</h3>
-  <p>PC · Español · 8.24 GB</p>
-  <a href="https://1shared.link/d/0cZmAhRIU8Vl"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/_riIW-CKqHk" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-      <div class="game-card" data-category="accion">
-  <img src="images/gallery/Juegos/Dark 1.png">
-
-  <div class="overlay">
-    <h4>Requisitos</h4>
-
-  <ul>
-<ul>
-  <li><strong>SO:</strong> Windows 7 SP1 64-bit</li>
-  <li><strong>CPU:</strong> Intel Core i5-2300 a 2.8 GHz / AMD FX-6300 a 3.5 GHz</li>
-  <li><strong>GPU:</strong> NVIDIA GeForce GTX 460 (1 GB) / AMD Radeon HD 6870 (1 GB)</li>
-  <li><strong>RAM:</strong> 6 GB</li>
-  <li><strong>DirectX:</strong> Versión 11</li>
-  <li><strong>Almacenamiento:</strong> 8 GB</li>
-</ul>
-  </div>
-
-  <div class="info">
-  <h3>Dark Souls I Remastered</h3>
-  <p>PC · Español · 6.33 GB</p>
-  <a href="https://1shared.link/d/WuwsVuGkIZ9-"target="_blank">Descargar</a>
-
-  <a href="https://youtu.be/S4gwkJKU63k?si=eARq-9OxNJZ1A2NI" target="_blank" class="btn-yt">
-    <i class="fa-brands fa-youtube"></i> Video
-  </a>
-
-  </div>
-  </div>
-
-
-
-
-
-  </div>
-
-  </section>
-
-
-  <section id="redes" class="section dark">
-
-  <h2>Sígueme</h2>
-
-  <div class="socials">
-
-  <a href="https://www.youtube.com/@Aysaac__DM" target="_blank">
-  <i class="fab fa-youtube"></i>
-  </a>
-
-  <a href="https://www.tiktok.com/@aysaac_dem" target="_blank">
-  <i class="fab fa-tiktok"></i>
-  </a>
-
-  <a href="https://www.instagram.com/aysaac_dm/" target="_blank">
-  <i class="fab fa-instagram"></i>
-  </a>
-
-  </div>
-
-  </section>
-
-  <!-- AVISO -->
-
-  <section class="section" id="aviso">
-
-  <h2>Aviso Importante</h2>
-
-  <p class="aviso">
-
-  Esta página no aloja archivos en sus servidores.
-  Todos los enlaces pertenecen a sitios externos.
-  El contenido es solo informativo.
-
-  </p>
-
-  </section>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-text">
+          <h1>Juegos de PC listos para descargar</h1>
+          <p>Cada juego trae su peso, idioma y requisitos, más un video en el canal.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#juegos"><i class="fa-solid fa-gamepad"></i>Ver juegos</a>
+            <a class="btn btn-ghost" href="https://www.youtube.com/@Aysaac__DM" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Suscribirse al canal</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="juegos">
+      <div class="container">
+        <div class="section-head">
+          <h2>Últimos juegos</h2>
+          <p id="resultCount" aria-live="polite"></p>
+        </div>
+
+        <div class="toolbar">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" id="searchInput" placeholder="Buscar juego" aria-label="Buscar juego" autocomplete="off">
+          </div>
+          <div class="categories" role="group" aria-label="Filtrar por categoría">
+            <button class="cat-btn active" type="button" data-category="all">Todos</button><button class="cat-btn" type="button" data-category="accion">Acción</button><button class="cat-btn" type="button" data-category="terror">Terror</button><button class="cat-btn" type="button" data-category="anime">Anime</button><button class="cat-btn" type="button" data-category="carreras">Carreras</button><button class="cat-btn" type="button" data-category="deportes">Deportes</button>
+          </div>
+        </div>
+
+        <div class="games-grid" id="gamesGrid">
+      <article class="game-card" data-category="accion">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/GTA SANDRI.jpeg" alt="Portada de GTA San Andreas" loading="lazy">
+          <span class="tag">Acción</span>
+          <div class="overlay" id="req-1"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 2000 / XP</li><li><strong>CPU:</strong> Pentium 4 o Athlon XP</li><li><strong>GPU:</strong> 128 MB (GeForce 6 recomendado)</li><li><strong>RAM:</strong> 384 MB</li><li><strong>Almacenamiento:</strong> 4.7 GB</li><li><strong>Audio:</strong> DirectX 9 (Sound Blaster Audigy 2 recomendado)</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-1"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>GTA San Andreas</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>3.09 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/rllju7hpliow1r2/GTA+SAN+ANDREAS.rar/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://www.youtube.com/watch?v=k7CGiXMUijY" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="accion">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/cup.png" alt="Portada de Cuphead" loading="lazy">
+          <span class="tag">Acción</span>
+          <div class="overlay" id="req-2"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 7 / 8 / 10</li><li><strong>CPU:</strong> i3 2100 / Athlon II X4 640</li><li><strong>RAM:</strong> 4 GB</li><li><strong>GPU:</strong> GT 240 1GB / Radeon 5570 1GB</li><li><strong>DirectX:</strong> 9.0</li><li><strong>Almacenamiento:</strong> 15 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-2"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Cuphead</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>4.5 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/mxf8cq0v25fnnbp/Cuphead-Kira-gtaall.rar/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/Y2ePEMEddlQ?si=c9VdVTzlNTROynIb" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="terror">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/fnaf.png" alt="Portada de FNAF" loading="lazy">
+          <span class="tag">Terror</span>
+          <div class="overlay" id="req-3"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows XP / Vista / 7</li><li><strong>CPU:</strong> Pentium 4 2 GHz o equivalente</li><li><strong>GPU:</strong> 1 GB</li><li><strong>DirectX:</strong> 9.0</li><li><strong>Almacenamiento:</strong> 250 MB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-3"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>FNAF</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>833 MB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/dpvyp57zwkxah10/FNAF_REAL_TIME.rar/file/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/ZVN8zI2u3Ow?si=3Av5zK5i4zygZqQC" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="anime">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/XENOVERSEEE1.jpg" alt="Portada de Dragon Ball Xenoverse" loading="lazy">
+          <span class="tag">Anime</span>
+          <div class="overlay" id="req-4"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows Vista / 7 (64-bit)</li><li><strong>CPU:</strong> Core 2 Duo 2.4 GHz / Athlon X2 5200+</li><li><strong>GPU:</strong> GeForce 8800 / Radeon HD 3870 (512 MB)</li><li><strong>RAM:</strong> 2 GB</li><li><strong>DirectX:</strong> 9.0c</li><li><strong>Almacenamiento:</strong> 10 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-4"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Dragon Ball Xenoverse</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>8.66 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://1shared.link/d/6tYD4kFzE_CR" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://www.youtube.com/watch?v=-KepyLrRb-I" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="anime">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/xenoversee2.jpg" alt="Portada de Dragon Ball Xenoverse 2" loading="lazy">
+          <span class="tag">Anime</span>
+          <div class="overlay" id="req-5"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10 / 11 (64-bit)</li><li><strong>CPU:</strong> Intel Core i5-4460 / AMD Ryzen 3 1200 o superior</li><li><strong>GPU:</strong> NVIDIA GeForce GTX 750 Ti / AMD Radeon HD 7850 o superior</li><li><strong>RAM:</strong> 8 GB</li><li><strong>DirectX:</strong> 11</li><li><strong>Almacenamiento:</strong> 17 GB o más</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-5"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Dragon Ball Xenoverse 2</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>26.50 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://1shared.link/d/_0Cbdvd2vwU0" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://www.youtube.com/watch?v=_yi1lsTfALY" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="anime">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Kakarot.png" alt="Portada de Dragon Ball Kakarot" loading="lazy">
+          <span class="tag">Anime</span>
+          <div class="overlay" id="req-6"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10 64-bit</li><li><strong>CPU:</strong> Intel Core i5-2400 / AMD Phenom II X6 1100T</li><li><strong>GPU:</strong> GTX 750 Ti / Radeon HD 7950</li><li><strong>RAM:</strong> 8 GB</li><li><strong>Almacenamiento:</strong> 40 GB disponibles</li><li><strong>DirectX:</strong> Versión 11</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-6"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Dragon Ball Kakarot</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>48.07 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://1shared.link/d/tyL8OWLxM-ZJ" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/2BkRnjzjzXs?si=EoT9rq_goZgwVsqI" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="anime">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/fght.png" alt="Portada de Dragon Ball FighterZ" loading="lazy">
+          <span class="tag">Anime</span>
+          <div class="overlay" id="req-7"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10+</li><li><strong>CPU:</strong> Intel Core i5-3470 / AMD Ryzen 3 1200</li><li><strong>GPU:</strong> NVIDIA GeForce GT 640 (2 GB) / AMD Radeon HD 7950 (3 GB)</li><li><strong>RAM:</strong> 6 GB</li><li><strong>DirectX:</strong> 11</li><li><strong>Almacenamiento:</strong> 30 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-7"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Dragon Ball FighterZ</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>6 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://1shared.link/d/jisxzUT22POE" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/g8d5e7popHY" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="anime">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Demo.png" alt="Portada de Demon Slayer" loading="lazy">
+          <span class="tag">Anime</span>
+          <div class="overlay" id="req-8"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10+</li><li><strong>CPU:</strong> Intel Core i5-3470 / AMD Ryzen 3 1200</li><li><strong>GPU:</strong> NVIDIA GeForce GT 640 (2 GB) / AMD Radeon HD 7950 (3 GB)</li><li><strong>RAM:</strong> 6 GB</li><li><strong>DirectX:</strong> 11</li><li><strong>Almacenamiento:</strong> 30 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-8"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Demon Slayer</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Inglés</span><span><i class="fa-solid fa-hard-drive"></i>11 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/lxok8yq92onoi8n/DEMON_SLAYER.torrent/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/LftC0isSQis?si=gJVhBDRYR3LcnYRV" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/simp.jpg" alt="Portada de Los Simpsons Hit and Run" loading="lazy">
+          
+          <div class="overlay" id="req-9"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Microsoft Windows 98 / ME / 2000 / XP</li><li><strong>CPU:</strong> Pentium III 1 GHz o equivalente</li><li><strong>GPU:</strong> Tarjeta 3D compatible con DirectX (64 MB VRAM, T&L)</li><li><strong>RAM:</strong> 256 MB</li><li><strong>DirectX:</strong> 8.1 o superior</li><li><strong>Audio:</strong> Tarjeta de sonido compatible con DirectX</li><li><strong>Almacenamiento:</strong> 2.2 GB</li><li><strong>Unidad:</strong> Lector CD-ROM 4X</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-9"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Los Simpsons Hit and Run</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>2.12 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/si2wusjzrmrt692/Los_Simpsons_Hit_and_Run_-_AysaacDM.rar/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/eVb5gvxaLbs?si=lA5Psq-jN1lP8d5y" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/thefore.png" alt="Portada de The Forest" loading="lazy">
+          
+          <div class="overlay" id="req-10"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 7</li><li><strong>CPU:</strong> Procesador Quad Core</li><li><strong>GPU:</strong> NVIDIA GeForce GTX 560</li><li><strong>RAM:</strong> 4 GB</li><li><strong>DirectX:</strong> 9.0</li><li><strong>Almacenamiento:</strong> 5 GB</li><li><strong>Audio:</strong> Tarjeta de sonido compatible con DirectX</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-10"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>The Forest</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>3.06 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/hulooi8ygowvgsw/The-Forest.rar/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/zpbExv3RAlw?si=oVa7ggSahKhgmR7b" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="carreras">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Mario.jpg" alt="Portada de Mario Kart 8 Deluxe" loading="lazy">
+          <span class="tag">Carreras</span>
+          <div class="overlay" id="req-11"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10 / 11</li><li><strong>CPU:</strong> Intel Core i5/i7 (8ª gen+) / Ryzen 5/7</li><li><strong>GPU:</strong> NVIDIA GTX 1060 / AMD RX 580 o superior</li><li><strong>RAM:</strong> 16 GB</li><li><strong>Almacenamiento:</strong> SSD requerido</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-11"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Mario Kart 8 Deluxe</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>6 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://switchrom.net/mario-kart-8-deluxe-nsp-xci-rom-96/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/JfQ8RovLNww?si=bmj4bAqeI0I1jKa8" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="accion">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Injus.webp" alt="Portada de Injustice 2" loading="lazy">
+          <span class="tag">Acción</span>
+          <div class="overlay" id="req-12"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 7 / 10 (64-bit)</li><li><strong>CPU:</strong> Intel Core i3-2100 / AMD FX-6300 / Ryzen 5 1400</li><li><strong>GPU:</strong> GTX 780 / GTX 1060 6GB / Radeon R9 290 / RX 570</li><li><strong>RAM:</strong> 8 GB</li><li><strong>DirectX:</strong> 11</li><li><strong>Almacenamiento:</strong> 60 GB</li><li><strong>Internet:</strong> Conexión de banda ancha</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-12"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Injustice 2</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>47 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://datanodes.to/gv3i48mowbk0/Injustice-2.zip" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/ZrdoLpiKttA?si=eS-G5pEdL9qdeAW8" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="accion">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/GTA V.png" alt="Portada de GTA V" loading="lazy">
+          <span class="tag">Acción</span>
+          <div class="overlay" id="req-13"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 7 / 8 / 10 (64-bit)</li><li><strong>CPU:</strong> Intel Core 2 Quad Q6600 / AMD Phenom 9850</li><li><strong>GPU:</strong> NVIDIA 9800 GT / AMD HD 4870 (1 GB)</li><li><strong>RAM:</strong> 4 GB</li><li><strong>DirectX:</strong> 10</li><li><strong>Almacenamiento:</strong> 72 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-13"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>GTA V</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>123 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://gofile.io/d/Ou8TXe" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/x8QksO8FFbA?si=K8o90Puqe4bAYfMU" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/MK XL.jpg" alt="Portada de MORTAL KOMBAT XL" loading="lazy">
+          
+          <div class="overlay" id="req-14"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 7 / 8 (64-bit)</li><li><strong>CPU:</strong> Intel Core i7-3770 / AMD FX-8350</li><li><strong>GPU:</strong> NVIDIA GTX 660 / AMD Radeon HD 7950</li><li><strong>RAM:</strong> 8 GB</li><li><strong>DirectX:</strong> 11</li><li><strong>Almacenamiento:</strong> 40 GB</li><li><strong>Internet:</strong> Conexión de banda ancha</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-14"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>MORTAL KOMBAT XL</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>36.67 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/e4iuf472avoes6b/MKXL.rar/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://www.youtube.com/watch?v=lbAFfzWpcL4" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/MK9.webp" alt="Portada de MORTAL KOMBAT 9 Komplete Edition" loading="lazy">
+          
+          <div class="overlay" id="req-15"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 7 / Windows 8 (64-bit)</li><li><strong>CPU:</strong> Intel Core i5-750 / AMD Phenom II X4 965</li><li><strong>GPU:</strong> NVIDIA GeForce GTX 560 / AMD Radeon HD 6950</li><li><strong>RAM:</strong> 4 GB</li><li><strong>DirectX:</strong> 11</li><li><strong>Almacenamiento:</strong> 10 GB</li><li><strong>Internet:</strong> Conexión de banda ancha para multijugador</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-15"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>MORTAL KOMBAT 9 Komplete Edition</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>9.1 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://gofile.io/d/JQNj1j" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://www.youtube.com/watch?v=AWJG5EyeAgQ" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Hollow.png" alt="Portada de Hollow Knight Silksong" loading="lazy">
+          
+          <div class="overlay" id="req-16"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10 (64-bit, versión 21H1 o superior)</li><li><strong>CPU:</strong> Intel Core i5-3470</li><li><strong>GPU:</strong> NVIDIA GTX 1050 (2 GB) / AMD Radeon R9 380 (2 GB)</li><li><strong>RAM:</strong> 8 GB</li><li><strong>DirectX:</strong> 10</li><li><strong>Almacenamiento:</strong> 8 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-16"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Hollow Knight Silksong</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>3.89 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/uq3wbmh0yfks621/Hollow-Knight-Silksong.rar/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/v2HTF9mJuIM?si=-pDcoWxQ5FKewa14" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="accion">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Gta 4.png" alt="Portada de Grand Theft Auto IV" loading="lazy">
+          <span class="tag">Acción</span>
+          <div class="overlay" id="req-17"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows XP SP3 / Vista SP1</li><li><strong>CPU:</strong> Intel Core 2 Duo 1.8 GHz / AMD Athlon X2 64 2.4 GHz</li><li><strong>GPU:</strong> NVIDIA 7900 (256 MB) / ATI X1900 (256 MB)</li><li><strong>RAM:</strong> 1.5 GB</li><li><strong>DirectX:</strong> 9.0c</li><li><strong>Almacenamiento:</strong> 16 GB</li><li><strong>Audio:</strong> Sonido 5.1</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-17"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Grand Theft Auto IV</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>13.06 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/7sndfezerrkvqgr/GTA_IV-COMPLETE_EDITION-AysaacDM.torrent/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/Q7-R24AKPnU?si=D31Xmzzx5YleMnV8" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="accion">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Miles Morales.jpg" alt="Portada de Spider Man-Miles Morales" loading="lazy">
+          <span class="tag">Acción</span>
+          <div class="overlay" id="req-18"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10 (64-bit, versión 1909 o superior)</li><li><strong>CPU:</strong> Intel Core i3-4160 / AMD equivalente</li><li><strong>GPU:</strong> NVIDIA GTX 950 (2 GB) / AMD Radeon RX 470 (4 GB)</li><li><strong>RAM:</strong> 8 GB</li><li><strong>DirectX:</strong> 12</li><li><strong>Almacenamiento:</strong> 75 GB disponibles (SSD recomendado)</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-18"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Spider Man-Miles Morales</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>37.23 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://1shared.link/d/0CHzx5cElJj2" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/RDIRr7aKFV4?si=bJXXhhI3tgtU002g" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="accion">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Spider man 2.jpg" alt="Portada de Spider Man-2 Deluxe Edition" loading="lazy">
+          <span class="tag">Acción</span>
+          <div class="overlay" id="req-19"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10/11 (64-bit, versión 1909 o superior)</li><li><strong>CPU:</strong> Intel Core i3-8100 / AMD Ryzen 3 3100</li><li><strong>GPU:</strong> NVIDIA GTX 1650 / AMD Radeon RX 5500 XT</li><li><strong>RAM:</strong> 16 GB</li><li><strong>DirectX:</strong> 12</li><li><strong>Almacenamiento:</strong> 140 GB disponibles (SSD requerido)</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-19"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Spider Man-2 Deluxe Edition</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>96.0 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://datavaults.co/yp5kbhxeerxx/Marvels_SpiderMan_2_Deluxe_Edition-papugames.com.rar" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/6_sUkpKZAJE" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/God of war.png" alt="Portada de GOD OF WAR IV" loading="lazy">
+          
+          <div class="overlay" id="req-20"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10 (64-bit)</li><li><strong>CPU:</strong> Intel Core i5-6600K / AMD Ryzen 5 2400G</li><li><strong>GPU:</strong> NVIDIA GTX 960 / AMD Radeon R9 290X</li><li><strong>RAM:</strong> 8 GB</li><li><strong>Almacenamiento:</strong> 70 GB (SSD recomendado)</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-20"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>GOD OF WAR IV</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>35.05 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/folder/swuclq35m66q6/GOD+OF+WAR" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/aD1RVe-7BcU?si=QMJ9nOoqsbtQqt_G" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/PO.png" alt="Portada de POPPY PLAYTIME" loading="lazy">
+          
+          <div class="overlay" id="req-21"><h4>Requisitos del sistema</h4><p class="no-req">Los requisitos de este juego todavía no están disponibles.</p></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-21"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>POPPY PLAYTIME</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>52.08 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://1fichier.com/?x3nkk13f1fdglr8r9c07" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/lc-afSa7T_Q?si=jQw2649d3f7Kq7FPss" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="accion">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Uncha.png" alt="Portada de UNCHARTED 4" loading="lazy">
+          <span class="tag">Acción</span>
+          <div class="overlay" id="req-22"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10 (64-bit)</li><li><strong>CPU:</strong> Intel Core i7-4770 / AMD Ryzen 5 1500X</li><li><strong>GPU:</strong> NVIDIA GTX 1060 (6 GB) / AMD RX 570 (4 GB)</li><li><strong>RAM:</strong> 16 GB</li><li><strong>Almacenamiento:</strong> 126 GB (SSD)</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-22"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>UNCHARTED 4</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>68.06 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/qtia1zds30el7pl/Unchar4-Aysaac.torrent/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/zYc_GRiYPDU?si=0aTyaL4vs3pPaukDs" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/WIWI.png" alt="Portada de THE WITCHER 3" loading="lazy">
+          
+          <div class="overlay" id="req-23"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 7 / 8 / 10 (64-bit)</li><li><strong>CPU:</strong> Intel Core i7-3770 / AMD FX-8350</li><li><strong>GPU:</strong> NVIDIA GTX 770 / AMD Radeon R9 290</li><li><strong>RAM:</strong> 8 GB</li><li><strong>Almacenamiento:</strong> 35–40 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-23"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>THE WITCHER 3</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>55.06 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/x9ysldxnsbx9qx3/The.Witcher.3.Wild.Hunt.Complete.Edition-AysaacDM.torrent/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/YZ1cgWrRvB8?si=48VVigAeGHJvuaPL" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="terror">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Portada Chaves Nightmares Tutorial.png" alt="Portada de CHAVES NAIGHTMARE" loading="lazy">
+          <span class="tag">Terror</span>
+          <div class="overlay" id="req-24"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 7 / 10 / 11</li><li><strong>CPU:</strong> Doble núcleo 2.0 GHz o superior</li><li><strong>GPU:</strong> Integrada o dedicada compatible con DirectX 9.0</li><li><strong>RAM:</strong> 2–4 GB</li><li><strong>DirectX:</strong> 9.0 o superior</li><li><strong>Almacenamiento:</strong> &lt; 1 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-24"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>CHAVES NAIGHTMARE</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>43.04 MB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.malavida.com/es/soft/chaves-nightmares/descargar" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/OWZouzxcSBg?si=BexVq_-gNTwf_Om3" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Hello.png" alt="Portada de Hello Neighbor Fredbear Mod" loading="lazy">
+          
+          <div class="overlay" id="req-25"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10</li><li><strong>CPU:</strong> Intel Core i7</li><li><strong>GPU:</strong> NVIDIA GTX 1060</li><li><strong>RAM:</strong> 8 GB</li><li><strong>Almacenamiento:</strong> 5 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-25"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Hello Neighbor Fredbear Mod</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>1.83 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/u7tkummcssv2wn1/Hello-Neighbor.rar/filee" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/xM3cNROPk_g?si=5rQPbwM7fXE6-mqS" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="terror">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Fnaf 111.png" alt="Portada de FIVE NIGHT AT FREDDY" loading="lazy">
+          <span class="tag">Terror</span>
+          <div class="overlay" id="req-26"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10 (64-bit)</li><li><strong>CPU:</strong> Intel Core i5-6600K / AMD Ryzen 5 3600</li><li><strong>GPU:</strong> NVIDIA GTX 1050 Ti</li><li><strong>RAM:</strong> 8 GB</li><li><strong>DirectX:</strong> 12</li><li><strong>Almacenamiento:</strong> 80 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-26"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>FIVE NIGHT AT FREDDY</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>218.1 MB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/ifx3l9trkdzwfkr/Five_Ninght_at_Freddy_1-AysaacDM.rar/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/Zkbb5Ae6PUQ?si=k8vKd-am1DBChCfd" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="terror">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Fnaf Two.png" alt="Portada de FIVE NIGHT AT FREDDY 2" loading="lazy">
+          <span class="tag">Terror</span>
+          <div class="overlay" id="req-27"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows XP / Vista / 7 / 8 o superior</li><li><strong>CPU:</strong> Pentium 4 2 GHz / AMD Athlon o equivalente</li><li><strong>GPU:</strong> 1 GB VRAM</li><li><strong>RAM:</strong> 1 GB</li><li><strong>Almacenamiento:</strong> 250 MB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-27"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>FIVE NIGHT AT FREDDY 2</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>205.69 MB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/t1cs9zsh998l6fy/Five_Ninght_at_Freddy_2-AysaacDM.rar/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/BKmQodN9JxU?si=tS7_o3Q41yrCXhft" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="terror">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Themimic.png" alt="Portada de Five Nights at Freddy&#x27;s Secret of the Mimic" loading="lazy">
+          <span class="tag">Terror</span>
+          <div class="overlay" id="req-28"><h4>Requisitos del sistema</h4><ul><li><strong>CPU:</strong> Superior a Intel Core i5-8400 / AMD Ryzen 5 1500X</li><li><strong>GPU:</strong> Superior a NVIDIA GTX 1070 / AMD RX Vega 56</li><li><strong>RAM:</strong> 16 GB</li><li><strong>Almacenamiento:</strong> 20 GB (SSD recomendado)</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-28"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Five Nights at Freddy&#x27;s Secret of the Mimic</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>18.06 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/eftxlaxptseg81b/Five+Nights+at+Freddys+Secret+of+the+Mimic.torrent/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/eQWWmkOiyJk?si=4NnY80EOL-YefNFz" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/ScheduleOne.png" alt="Portada de Schedule I" loading="lazy">
+          
+          <div class="overlay" id="req-29"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10 (64-bit)</li><li><strong>CPU:</strong> 6 núcleos a 3.5 GHz o similar</li><li><strong>GPU:</strong> NVIDIA RTX 3060 / AMD Radeon RX 6700</li><li><strong>RAM:</strong> 16 GB</li><li><strong>Almacenamiento:</strong> 8 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-29"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Schedule I</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>1.89 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://app.mediafire.com/folder/126sf94c0lwcd/S" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/QebjsWxHUNE?si=CWXoYq6IXS_ex2Qm" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="deportes">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/FIFA 17.png" alt="Portada de FIFA 17" loading="lazy">
+          <span class="tag">Deportes</span>
+          <div class="overlay" id="req-30"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 7 / 8.1 / 10 (64-bit)</li><li><strong>CPU:</strong> Intel Core i5-3550K / AMD FX-8150</li><li><strong>GPU:</strong> NVIDIA GTX 660 / AMD Radeon R9 270</li><li><strong>RAM:</strong> 8 GB</li><li><strong>Almacenamiento:</strong> 50 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-30"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>FIFA 17</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>38.06 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://1shared.link/d/Senv5f9YnMhg" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/GuDiaIpCKlc?si=xVkV7uG1Xeo1W7tl" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="deportes">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/FF 18.jpg" alt="Portada de FIFA 18" loading="lazy">
+          <span class="tag">Deportes</span>
+          <div class="overlay" id="req-31"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 7 / 8.1 / 10 (64-bit)</li><li><strong>CPU (Mínimo):</strong> Intel Core i3-2100 / AMD Phenom II X4 965</li><li><strong>CPU (Recomendado):</strong> Intel Core i5-3550K / AMD FX-8150</li><li><strong>GPU (Mínimo):</strong> NVIDIA GTX 460 / AMD Radeon R7 260</li><li><strong>GPU (Recomendado):</strong> NVIDIA GTX 660 / AMD Radeon R9 270</li><li><strong>RAM:</strong> 8 GB</li><li><strong>Almacenamiento:</strong> 50 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-31"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>FIFA 18</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>34.68 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://1shared.link/d/4E9R9jRFX38C" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/hKkwrOUuesc" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="deportes">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/PES2013.jpg" alt="Portada de PRO EVOLUTION SOCCER 2013" loading="lazy">
+          <span class="tag">Deportes</span>
+          <div class="overlay" id="req-32"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows XP / Vista / 7</li><li><strong>CPU (Mínimo):</strong> Intel Pentium IV 2.4 GHz / AMD equivalente</li><li><strong>CPU (Recomendado):</strong> Intel Core 2 Duo 2.0 GHz / AMD Athlon X2</li><li><strong>GPU (Mínimo):</strong> NVIDIA GeForce 6600 / ATI Radeon X1300</li><li><strong>GPU (Recomendado):</strong> NVIDIA GeForce 7900 / ATI Radeon HD 2400</li><li><strong>RAM:</strong> 1 GB</li><li><strong>Almacenamiento:</strong> 8 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-32"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>PRO EVOLUTION SOCCER 2013</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>4.44 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/folder/u1ijtekcqqt0k/PES" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/YQBJc6xtZ7s" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/BO2.png" alt="Portada de Call of Duty Black Ops II" loading="lazy">
+          
+          <div class="overlay" id="req-33"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows Vista SP2 / 7 (XP no compatible)</li><li><strong>CPU:</strong> Intel Core 2 Duo E8200 / AMD Phenom X3 8750</li><li><strong>GPU:</strong> NVIDIA GeForce 8800GT (512 MB) / ATI Radeon HD 3870 (512 MB)</li><li><strong>RAM:</strong> 2 GB (32-bit) / 4 GB (64-bit)</li><li><strong>DirectX:</strong> 9.0c</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-33"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Call of Duty Black Ops II</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>13.68 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://drive.google.com/file/d/1HohjDEmUNUg3o8-_xkzunCbF-tr8hE_K/view" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/lJNsv940MEc?si=1_fxosFfpMsruI8L" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="accion">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/thelast.png" alt="Portada de The Last Of Us Parte I" loading="lazy">
+          <span class="tag">Acción</span>
+          <div class="overlay" id="req-34"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10 (64-bit versión 1909 o superior)</li><li><strong>CPU:</strong> Intel Core i7-4770K / AMD Ryzen 5 1500X</li><li><strong>GPU:</strong> NVIDIA GeForce GTX 970 (4 GB) / AMD Radeon RX 470 (4 GB)</li><li><strong>RAM:</strong> 16 GB</li><li><strong>DirectX:</strong> Versión 12</li><li><strong>Almacenamiento:</strong> 100 GB (SSD recomendado)</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-34"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>The Last Of Us Parte I</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>66.14 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/otuncoq9cwazi83/the_last_of_us-AysaacDM.torrent/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/SP2pu2-E5iY?si=sj7UcCD0K-xJcMmL" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="anime">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/NARUTO CONNNECTION.jpg" alt="Portada de NARUTO Ultimate Ninja STORM Connections!" loading="lazy">
+          <span class="tag">Anime</span>
+          <div class="overlay" id="req-35"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 7 (64-bit) o superior</li><li><strong>CPU:</strong> Intel Core i3-530 / AMD Phenom II X4 940</li><li><strong>GPU:</strong> Tarjeta gráfica de 1 GB (compatible con DirectX 10)</li><li><strong>RAM:</strong> 4 GB</li><li><strong>DirectX:</strong> Versión 11</li><li><strong>Almacenamiento:</strong> 40 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-35"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>NARUTO Ultimate Ninja STORM Connections!</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>24.07 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://1shared.link/d/41KqsEICVYvR" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/ELdUimZAKRw" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="carreras">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Wanted Most.png" alt="Portada de Need For Speed Most Wanted" loading="lazy">
+          <span class="tag">Carreras</span>
+          <div class="overlay" id="req-36"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows XP (32-bit)</li><li><strong>CPU:</strong> Intel Pentium 4 (1.4 GHz) / AMD equivalente</li><li><strong>GPU:</strong> 64 MB (compatible con DirectX 9.0c)</li><li><strong>RAM:</strong> 256 MB</li><li><strong>DirectX:</strong> Versión 9.0c</li><li><strong>Almacenamiento:</strong> 3 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-36"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Need For Speed Most Wanted</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>2.08 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/93vq18wr3e6ncdn/NFS_Most_Wanted_-_AysaacDM.rar/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/jyvSn9PcbjI?si=Q7BZCVve-9-fwOow" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="carreras">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Need for Speed Payback.jpg" alt="Portada de Need For Speed Payback" loading="lazy">
+          <span class="tag">Carreras</span>
+          <div class="overlay" id="req-37"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 7 / 8.1 / 10 (64-bit)</li><li><strong>CPU:</strong> Intel i3 6300 (3.8 GHz) / AMD FX 8150</li><li><strong>GPU:</strong> NVIDIA GeForce GTX 750 Ti / AMD Radeon HD 7850 (2 GB VRAM)</li><li><strong>RAM:</strong> 6 GB</li><li><strong>DirectX:</strong> Versión 11</li><li><strong>Almacenamiento:</strong> 30 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-37"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Need For Speed Payback</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>15.97 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://1shared.link/d/S_usFO6ruiYh" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/hz4gmTfh8qs" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/YUZU.png" alt="Portada de Emulador YUZU" loading="lazy">
+          
+          <div class="overlay" id="req-38"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10 (64-bit) o superior</li><li><strong>CPU:</strong> Intel Core i5-4430 / AMD Ryzen 3 1200 o superior</li><li><strong>GPU:</strong> NVIDIA GeForce GTX 1050 / AMD Radeon RX 560 o superior (compatible con OpenGL 4.6 o Vulkan)</li><li><strong>RAM:</strong> 8 GB</li><li><strong>DirectX:</strong> No requerido (usa OpenGL/Vulkan)</li><li><strong>Almacenamiento:</strong> 10 GB o más</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-38"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Emulador YUZU</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>78.62 MB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://app.mediafire.com/folder/syhaqeozubwdq" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/JfQ8RovLNww?si=3nicwHzRbYwWNRzk" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/dbz ps2.jpg" alt="Portada de DBZ BUDOKAI TENKAICHI 3 CROSSOVER" loading="lazy">
+          
+          <div class="overlay" id="req-39"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10 (64-bit) o superior</li><li><strong>CPU:</strong> Intel Core i3-2100 / AMD FX-4300 o superior</li><li><strong>GPU:</strong> NVIDIA GeForce GTX 750 / AMD Radeon HD 7850 o superior (compatible con OpenGL 4.5 o Vulkan)</li><li><strong>RAM:</strong> 4 GB (8 GB recomendado)</li><li><strong>DirectX:</strong> No requerido (usa OpenGL/Vulkan)</li><li><strong>Almacenamiento:</strong> 5 GB o más</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-39"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>DBZ BUDOKAI TENKAICHI 3 CROSSOVER</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>3.15 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/83mr2gcbupad8xk/DRAGON_BALL_ULTRA_CROSSOVER.iso/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/roX-xk45BRE?si=lRomd82Uw9OTQQw7" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="anime">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/One Piece.jpg" alt="Portada de ONE PIECE PIRATE WARRRIOR 4" loading="lazy">
+          <span class="tag">Anime</span>
+          <div class="overlay" id="req-40"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10 (64-bit)</li><li><strong>CPU:</strong> Intel Core i5-3450 / AMD Ryzen 3 1300X o superior</li><li><strong>GPU:</strong> NVIDIA GeForce GTX 660 (2 GB) / AMD Radeon HD 7870 (2 GB)</li><li><strong>RAM:</strong> 8 GB</li><li><strong>DirectX:</strong> Versión 11</li><li><strong>Almacenamiento:</strong> 25 GB o más</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-40"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>ONE PIECE PIRATE WARRRIOR 4</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>24.79 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/6kkge3ewb4ipgod/1769178985-One.Piece.Pirate.Warriors.4.Legendary.Edition-RUNE.torrent/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/ZaFao-4OPz0?si=ZGlVre7cZAibBllA" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="anime">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Sparking.jpg" alt="Portada de SPARKING ZERO" loading="lazy">
+          <span class="tag">Anime</span>
+          <div class="overlay" id="req-41"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 10 (64-bit) o superior</li><li><strong>CPU:</strong> Intel Core i5-9600K / AMD Ryzen 5 2600 o superior</li><li><strong>GPU:</strong> NVIDIA GeForce RTX 2060 / AMD Radeon RX 5700 o superior</li><li><strong>RAM:</strong> 16 GB</li><li><strong>DirectX:</strong> Versión 12</li><li><strong>Almacenamiento:</strong> 50 GB o más</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-41"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>SPARKING ZERO</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>25.43 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/276imot4o1nfyk4/DBZ+SPARKING+ZERO-AysaacDM.torrent/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/KvfzRCbNzaQ" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="accion">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Watch Dogs.jpg" alt="Portada de Watch Dogs" loading="lazy">
+          <span class="tag">Acción</span>
+          <div class="overlay" id="req-42"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows Vista (SP2), Windows 7 (SP1) o Windows 8 (solo 64-bit)</li><li><strong>CPU:</strong> Intel Core 2 Quad Q8400 / AMD Phenom II X4 940 o superior</li><li><strong>GPU:</strong> NVIDIA GeForce GTX 460 / AMD Radeon HD 5770 o superior</li><li><strong>RAM:</strong> 6 GB</li><li><strong>DirectX:</strong> Versión 11</li><li><strong>Almacenamiento:</strong> 25 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-42"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Watch Dogs</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>21.23 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://www.mediafire.com/file/yvlcvhro9yylij0/Watch+Dogs+Complete+Edition.iso.torrent/file" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/jDEZok-iDpg" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="accion">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/DMC.jpg" alt="Portada de DMC - Devil My Cry" loading="lazy">
+          <span class="tag">Acción</span>
+          <div class="overlay" id="req-43"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows Vista / Windows 7 / Windows 8</li><li><strong>CPU:</strong> Intel Core 2 Duo a 2.4 GHz / AMD Athlon X2 a 2.8 GHz</li><li><strong>GPU:</strong> NVIDIA GeForce 8800 GTS / AMD Radeon HD 3850</li><li><strong>RAM:</strong> 2 GB</li><li><strong>DirectX:</strong> Versión 9.0c</li><li><strong>Almacenamiento:</strong> 9 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-43"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>DMC - Devil My Cry</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>7.58 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://1shared.link/d/Wrn08e2Of807" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/QWwDKBHIXuE" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="accion">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Dark Soul II.jpg" alt="Portada de Dark Souls II Scholar of the First Sin" loading="lazy">
+          <span class="tag">Acción</span>
+          <div class="overlay" id="req-44"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 7 SP1 64bit / Windows 8.1 64bit</li><li><strong>CPU:</strong> Intel Core i3-2100 a 3.1 GHz / AMD A8 3870 a 3.6 GHz</li><li><strong>GPU:</strong> NVIDIA GeForce GTX 465 / AMD Radeon HD 6870</li><li><strong>RAM:</strong> 4 GB</li><li><strong>DirectX:</strong> Versión 11</li><li><strong>Almacenamiento:</strong> 23 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-44"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Dark Souls II Scholar of the First Sin</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>8.24 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://1shared.link/d/0cZmAhRIU8Vl" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/_riIW-CKqHk" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+      <article class="game-card" data-category="accion">
+        <div class="thumb">
+          <img src="images/gallery/Juegos/Dark 1.png" alt="Portada de Dark Souls I Remastered" loading="lazy">
+          <span class="tag">Acción</span>
+          <div class="overlay" id="req-45"><h4>Requisitos del sistema</h4><ul><li><strong>SO:</strong> Windows 7 SP1 64-bit</li><li><strong>CPU:</strong> Intel Core i5-2300 a 2.8 GHz / AMD FX-6300 a 3.5 GHz</li><li><strong>GPU:</strong> NVIDIA GeForce GTX 460 (1 GB) / AMD Radeon HD 6870 (1 GB)</li><li><strong>RAM:</strong> 6 GB</li><li><strong>DirectX:</strong> Versión 11</li><li><strong>Almacenamiento:</strong> 8 GB</li></ul></div>
+          <button class="req-btn" type="button" aria-expanded="false" aria-controls="req-45"><i class="fa-solid fa-circle-info"></i><span>Requisitos</span></button>
+        </div>
+        <div class="info">
+          <h3>Dark Souls I Remastered</h3>
+          <p class="meta"><span><i class="fa-solid fa-language"></i>Español</span><span><i class="fa-solid fa-hard-drive"></i>6.33 GB</span></p>
+          <div class="actions">
+            <a class="btn-dl" href="https://1shared.link/d/WuwsVuGkIZ9-" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-download"></i>Descargar</a>
+            <a class="btn-yt" href="https://youtu.be/S4gwkJKU63k?si=eARq-9OxNJZ1A2NI" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>Video</a>
+          </div>
+        </div>
+      </article>
+        </div>
+
+        <div class="empty" id="emptyState" hidden>
+          <i class="fa-solid fa-ghost"></i>
+          <h3>No encontramos ese juego</h3>
+          <p>Revisa el nombre o vuelve a ver todos los juegos.</p>
+          <button class="btn btn-primary" type="button" id="resetFilters">Ver todos</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="redes">
+      <div class="container">
+        <div class="section-head"><h2>Sígueme</h2></div>
+        <div class="socials">
+          <a href="https://www.youtube.com/@Aysaac__DM" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>YouTube</a>
+          <a href="https://www.tiktok.com/@aysaac_dem" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i>TikTok</a>
+          <a href="https://www.instagram.com/aysaac_dm/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i>Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="aviso">
+      <div class="container">
+        <div class="section-head"><h2>Aviso importante</h2></div>
+        <div class="notice">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <p>Esta página no aloja archivos en sus servidores. Todos los enlaces pertenecen a sitios externos. El contenido es solo informativo.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-
-  <p>© 2026 AysaacDM | Disfruta de los juegos</p>
-
+    <div class="container"><p>© 2026 AysaacDM · Disfruta de los juegos</p></div>
   </footer>
 
-
 <script>
-
-
 window.addEventListener("load", () => {
-
   const loader = document.getElementById("loader");
-
-  // tiempo minimo del loader
-  const tiempoMinimo = 4000;
-
   setTimeout(() => {
-
     loader.classList.add("hide");
-
-    setTimeout(() => {
-      loader.style.display = "none";
-    }, 800);
-
-  }, tiempoMinimo);
-
+    setTimeout(() => loader.remove(), 600);
+  }, 2000);
 });
 
-</script>
-
-<script>
-
-const searchInput = document.getElementById("searchInput");
+const input = document.getElementById("searchInput");
 const buttons = document.querySelectorAll(".cat-btn");
-const cards = document.querySelectorAll(".game-card");
+const cards = [...document.querySelectorAll(".game-card")];
+const countEl = document.getElementById("resultCount");
+const empty = document.getElementById("emptyState");
+let category = "all";
 
-let currentCategory = "all";
-
-/* FILTRAR */
 function filterGames() {
-
-const search = searchInput.value.toLowerCase();
-
-cards.forEach(card => {
-
-const title =
-card.querySelector("h3").textContent.toLowerCase();
-
-const category = card.dataset.category;
-
-const matchCategory =
-currentCategory === "all" ||
-category === currentCategory;
-
-const matchSearch =
-title.includes(search);
-
-if (matchCategory && matchSearch) {
-card.style.display = "block";
-} else {
-card.style.display = "none";
+  const q = input.value.trim().toLowerCase();
+  let shown = 0;
+  cards.forEach(card => {
+    const title = card.querySelector("h3").textContent.toLowerCase();
+    const ok = (category === "all" || card.dataset.category === category) && title.includes(q);
+    card.hidden = !ok;
+    if (ok) shown++;
+  });
+  countEl.textContent = shown === cards.length ? cards.length + " juegos" : shown + " de " + cards.length + " juegos";
+  empty.hidden = shown !== 0;
 }
 
+buttons.forEach(btn => btn.addEventListener("click", () => {
+  buttons.forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  category = btn.dataset.category;
+  filterGames();
+}));
+input.addEventListener("input", filterGames);
+document.getElementById("resetFilters").addEventListener("click", () => {
+  input.value = "";
+  buttons[0].click();
 });
 
+function closeAll(except) {
+  cards.forEach(c => {
+    if (c === except) return;
+    c.classList.remove("open");
+    const b = c.querySelector(".req-btn");
+    b.setAttribute("aria-expanded", "false");
+    b.querySelector("span").textContent = "Requisitos";
+  });
 }
+cards.forEach(card => {
+  const btn = card.querySelector(".req-btn");
+  btn.addEventListener("click", () => {
+    const open = card.classList.toggle("open");
+    closeAll(card);
+    btn.setAttribute("aria-expanded", open);
+    btn.querySelector("span").textContent = open ? "Cerrar" : "Requisitos";
+  });
+});
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeAll(); });
 
-/* BOTONES */
-buttons.forEach(btn => {
-
-btn.addEventListener("click", () => {
-
-buttons.forEach(b => b.classList.remove("active"));
-
-btn.classList.add("active");
-
-currentCategory = btn.dataset.category;
+const links = document.querySelectorAll(".navbar nav a");
+const spy = new IntersectionObserver(entries => {
+  entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    links.forEach(a => a.toggleAttribute("aria-current", a.getAttribute("href") === "#" + en.target.id));
+  });
+}, { rootMargin: "-45% 0px -50% 0px" });
+document.querySelectorAll("main section[id]").forEach(s => spy.observe(s));
 
 filterGames();
-
-});
-
-});
-
-searchInput.addEventListener("input", filterGames);
-
 </script>
-
-  </body>
-  </html>
+</body>
+</html>
