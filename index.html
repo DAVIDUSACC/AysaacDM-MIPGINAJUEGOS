@@ -8,9 +8,13 @@
   <link rel="icon" href="images/logo.ico.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <script>
+    try { if (localStorage.getItem("aysaac_unlocked") !== "1") document.documentElement.classList.add("gate-on"); }
+    catch (e) { document.documentElement.classList.add("gate-on"); }
+  </script>
 </head>
 <body>
 
@@ -20,6 +24,29 @@
       <h2>Aysaac<span>DM</span></h2>
       <div class="loader-bar"><div class="loader-progress"></div></div>
       <p>No olvides suscribirte al canal</p>
+    </div>
+  </div>
+
+  <div id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="gate-box">
+      <h2 id="gateTitle">¡Casi listo!</h2>
+      <p class="gate-sub">Completa los siguientes pasos para desbloquear el enlace a la página de juegos.</p>
+
+      <button class="gate-step yt" type="button" id="gateYt" data-url="https://www.youtube.com/@SoyAysaacDM">
+        <i class="fa-brands fa-youtube ico"></i><span class="label">Suscribirse al canal</span><span class="state"></span>
+      </button>
+      <button class="gate-step ig" type="button" id="gateIg" data-url="https://www.instagram.com/soydavidbm/">
+        <i class="fa-brands fa-instagram ico"></i><span class="label">Seguir en Instagram</span><span class="state"></span>
+      </button>
+
+      <div class="gate-progress">
+        <div class="gate-progress-top"><span>Progreso de validación</span><span id="gateCount">0/2 Completados</span></div>
+        <div class="gate-bar"><span id="gateFill"></span></div>
+      </div>
+
+      <button class="gate-go" type="button" id="gateGo" disabled>
+        <i class="fa-solid fa-lock" id="gateIcon"></i><span id="gateText">Enlace bloqueado</span>
+      </button>
     </div>
   </div>
 
@@ -1006,6 +1033,73 @@ const spy = new IntersectionObserver(entries => {
 document.querySelectorAll("main section[id]").forEach(s => spy.observe(s));
 
 filterGames();
+</script>
+<script>
+(function () {
+  const AWAY_MS = 20000; // tiempo mínimo (ms) fuera de la página por paso; no se le muestra al visitante
+  const root = document.documentElement;
+  const steps = [document.getElementById("gateYt"), document.getElementById("gateIg")];
+  const go = document.getElementById("gateGo"), icon = document.getElementById("gateIcon"), text = document.getElementById("gateText");
+  const fill = document.getElementById("gateFill"), count = document.getElementById("gateCount");
+  const done = new Set();
+  const away = {};          // tiempo acumulado fuera de la página, por paso
+  let active = null;        // paso que se está realizando
+  let leftAt = 0;           // momento en que salió de la página
+
+  steps.forEach(b => away[b.id] = 0);
+
+  function update() {
+    count.textContent = done.size + "/2 Completados";
+    fill.style.width = (done.size / 2 * 100) + "%";
+    if (done.size === 2) {
+      go.disabled = false; go.classList.remove("waiting"); go.classList.add("open"); document.querySelector(".gate-bar").classList.remove("wait");
+      icon.className = "fa-solid fa-unlock"; text.textContent = "Ir a la página de juegos";
+    }
+  }
+  function setState(btn, html) { btn.querySelector(".state").innerHTML = html; }
+  const bar = document.querySelector(".gate-bar");
+  function waiting(on) {
+    if (done.size === 2) return;
+    bar.classList.toggle("wait", on);
+    go.classList.toggle("waiting", on);
+    icon.className = on ? "fa-solid fa-circle-notch fa-spin" : "fa-solid fa-lock";
+    text.textContent = on ? "Esperando verificación…" : "Enlace bloqueado";
+  }
+
+  steps.forEach(btn => {
+    setState(btn, "Pendiente");
+    btn.addEventListener("click", () => {
+      if (done.has(btn.id)) return;
+      active = btn;
+      btn.classList.add("checking");
+      setState(btn, '<i class="fa-solid fa-circle-notch fa-spin"></i> Verificando…'); waiting(true);
+      window.open(btn.dataset.url, "_blank", "noopener");
+    });
+  });
+
+  // Solo cuenta el tiempo que la persona realmente pasa fuera de esta página
+  document.addEventListener("visibilitychange", () => {
+    if (!active) return;
+    if (document.hidden) { leftAt = Date.now(); return; }
+    if (!leftAt) return;
+    away[active.id] += Date.now() - leftAt;
+    leftAt = 0;
+    const left = Math.ceil((AWAY_MS - away[active.id]) / 1000);
+    if (left <= 0) {
+      active.classList.remove("checking"); active.classList.add("done");
+      setState(active, '<i class="fa-solid fa-circle-check"></i> Listo');
+      done.add(active.id); active = null; waiting(false); update();
+    } else {
+      setState(active, '<i class="fa-solid fa-circle-notch fa-spin"></i> Verificando…');
+    }
+  });
+
+  go.addEventListener("click", () => {
+    try { localStorage.setItem("aysaac_unlocked", "1"); } catch (e) {}
+    root.classList.remove("gate-on");
+    window.scrollTo(0, 0);
+  });
+})();
 </script>
 </body>
 </html>
